@@ -2,4 +2,41 @@
  * If you need to change something that only affects a specific page, then use/make a separate CSS file.
  * 
  * This is to keep file sizes smaller and help with organization.
+
+
+
+ * We are using mobile-first design. This means it needs to work first on a small screen (by width), then extra css is applied as the viewport width crosses certain points.
+
+ * We are utilizing Bootstrap (CSS & JS) and Popper
  */
+
+/* Extra Small <576px Width*/
+nav a:hover {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Small >=576px Width*/
+@include media-breakpoint-up(sm) {
+
+}
+
+/* Medium >=768px Width*/
+@include media-breakpoint-up(md) {
+
+}
+
+/* Large >=992px Width*/
+@include media-breakpoint-up(lg) {
+
+}
+
+/* X-Large >=1200 Width*/
+@include media-breakpoint-up(xl) {
+
+}
+
+/* XX-Large >=1400px Width*/
+@include media-breakpoint-up(xxl){
+
+}
