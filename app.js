@@ -1,10 +1,10 @@
 const express = require("express");
-const fs = require("fs");
+const jf = require("jsonfile");
 
 // Routers
 const starterGuideRouter = 	require("./routers/starterGuideRouter");
 const deckRouter =			require("./routers/deckRouter");
-const quizRouter =			require("./routers/quizRouter");
+// const quizRouter =			require("./routers/quizRouter");
 
 // Setup
 const app = express();
@@ -23,10 +23,11 @@ app.get("/", (req,res) => {
 
 app.use("/getting-started", starterGuideRouter);
 app.use("/decks", deckRouter);
-app.use("/quizes", quizRouter);
+// app.use("/quizes", quizRouter);
 
 app.get("/dictionary", (req,res) => {
-	res.render("dictionary");
+	var dictJSON = jf.readFileSync("./public/database/dictionary.json");
+	res.render("dictionary", dict = dictJSON);
 });
 
 
@@ -36,11 +37,3 @@ app.use((req,res) => {
 		title:"404"
 	});
 });
-// Decks
-// Getting Started
-// 		board zones
-// 		card overview
-// 		turn overview
-// 		card types
-// quizes
-// dictionary

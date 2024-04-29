@@ -1,0 +1,17 @@
+<%- include("./partials/head.ejs"); %>
+
+<% for(i=0; i < dict.length; i++) { %>
+	<div class="row" style="border-bottom: 1px solid black;">
+		<div class="col-2" style="border-right: 1px solid rgb(105,105,105);">
+			<h6><%= dict[i].keyword %></h6>
+		</div>
+		<div class="col-3" style="border-right: 1px solid rgb(105,105,105);">
+			<p><i><%= dict[i].reminder %></i></p>
+		</div>
+		<div class="col">
+			<p><%= dict[i].description %></p>
+		</div>
+	</div>
+<% } %>
+
+<%- include("./partials/foot.ejs"); %>

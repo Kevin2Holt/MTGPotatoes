@@ -1,5 +1,27 @@
 <%- include("./partials/head.ejs"); %>
 
+<div class="row">
 
+	<div class="col-sm-2" style="padding: 0.5em 0.1em 0 2em;">
+		<h3>Tags:</h3>
+		<% for(i=0; i < deckData.tags.length; i++) { %>
+			<p class="mtgp_tag"><%= deckData.tags[i] %></p>
+		<% } %>
+	</div>
+	<div class="col" style="border-left: 1px solid black; padding: 0.5em 0 0.5em 1em">
+		<h3><%= deckData.title %></h3>
+		<p><%= deckData.description %></p>
+	</div>
+</div>
+<div style="border-top:1px solid black; padding: 0.5em 1em">
+	<h3>Deck List:</h3>
+	<% for(i=0; i < deckData.decklist.length; i++) { %>
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=<%= deckData.decklist[i][1] %>&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white"><%= deckData.decklist[i][0] %>x <%= deckData.decklist[i][1] %></h6>
+		</div>
+	<% } %>
+</div>
 
 <%- include("./partials/foot.ejs"); %>

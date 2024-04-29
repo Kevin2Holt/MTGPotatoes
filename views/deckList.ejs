@@ -1,5 +1,12 @@
 <%- include("./partials/head.ejs"); %>
-
-
+<% for(i=0; i < deckList.length; i++) { %>
+	<a href="/decks/<%= i %>" class="mtgp_decklistCard text-white">
+		<img class="mtgp_decklistCard_img" src='https://api.scryfall.com/cards/named?exact=<%= deckList[i].decklist[0][1]%>&format=image&version=art_crop' />
+		<div class="imgoverlay"></div>
+		<div class="overlay">
+			<h5 class="mtgp_decklistCard_title"><%= deckList[i].title %></h5>
+		</div>
+	</a>
+<% } %>
 
 <%- include("./partials/foot.ejs"); %>
