@@ -65,7 +65,9 @@ nav a:hover {
   }
   
   .sidenav a:hover {
-	color: #f1f1f1;
+	color: rgba(255, 0, 0, 0.781); /*edit the color of nav when highlighted*/
+	font-weight: bold;
+	text-decoration: none;
   }
   
   .sidenav .closebtn {
