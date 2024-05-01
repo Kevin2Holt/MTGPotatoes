@@ -55,6 +55,22 @@
 	.mtgp_decklistCard:hover .imgoverlay {
 		opacity: 1;
 	}
+	.mtgp_getStart_navLink {
+		color: #222;
+		text-decoration: none;
+	}
+	.mtgp_getStart_navLink:hover {
+		color: #222;
+	}
+	.mtgp_getStart_navLink h4 {
+		text-decoration: underline;
+	}
+	.mtgp_getStart_navLink * {
+		transition: background-color 0.3s ease;
+	}
+	.mtgp_getStart_navLink:hover * {
+		background-color: #50555f;
+	}
 /*404 Page*/
 	#errorMessage{
 		text-align: center;
