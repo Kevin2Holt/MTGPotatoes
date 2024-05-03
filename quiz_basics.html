@@ -8,6 +8,8 @@
 
 	<link rel="stylesheet" href="./styles/sitewide.css">
 
+	<link rel="stylesheet" href="./styles/quiz_basics.css">
+
 	<title>Basics Quiz</title>
 </head>
 
@@ -23,9 +25,8 @@
 	</nav>
 </header>
 
-<body class="bg-secondary">
+<body>
 	<!-- This is where this page's content goes -->
-
 	<!-- Side navigation bar-->
 	<div id="mySidenav" class="sidenav">
 		<a class="closebtn" onclick="closeNav()">&times;</a>
@@ -40,33 +41,40 @@
 		<a href="./dictionary.html">Dictionary</a>
 	  </div>
 
-	<div class="row">
-		<div class="col-sm-2 pl-4">
+	<div>
+		<div>
 			<!-- This is just filler content to briefly explain the purpose of this page -->
 			<h3>Basics Quiz</h3>
 			<p>This page will hold the actual quiz covering the basics</p>
 			<p>This quiz is meant to tell new players how ready/prepared they are to play their first game</p>
+			
 		</div>
-		<div class="col-sm-2 pl-4" style="border:1px solid black">
-			<h3>Getting Started!</h3>
-			<p>Et adipisicing enim officia dolor elit nulla consequat velit id deserunt cupidatat nisi exercitation voluptate in dolor laborum voluptate. Irure magna in in exercitation enim aliquip veniam non exercitation ut dolore est eiusmod magna ullamco id pariatur. Aute ut est incididunt qui anim esse dolore ad aliquip dolore in occaecat consequat esse nostrud culpa aliquip nisi. Est consequat voluptate esse non fugiat elit pariatur ex sunt velit.</p>
+	
+		<div class="quiz-container">
+			<h2>Basics quiz</h2>
+			<div class="quiz">
+				<h3 id="question">Question goes here</h3>
+				<div id="answer-buttons">
+					<button class="answer-btn">Answer 1</button>
+					<button class="answer-btn">Answer 2</button>
+					<button class="answer-btn">Answer 3</button>
+					<button class="answer-btn">Answer 4</button>
+					<p id="result">result</p>
+				</div>
+				<button id="next-btn">Next</button>
+			</div>
 		</div>
-		<div class="col-sm-2 pl-4" style="border:1px solid black">
-			<h3>What's Next?</h3>
-			<p>Fugiat veniam sit reprehenderit pariatur adipisicing sed laboris sit aliquip eiusmod ad laboris exercitation est. Amet nisi et labore quis id deserunt ullamco nostrud culpa dolor voluptate occaecat in. Pariatur aliquip amet nostrud commodo elit nulla sint magna. Est irure minim excepteur incididunt culpa ad eiusmod adipisicing irure fugiat dolor laborum fugiat cillum commodo deserunt. Reprehenderit esse laboris id proident ad anim velit esse laborum.</p>
-		</div>
-	</div>
-
 
 	<script src="./scripts/jquery_3_7_1.js"></script><!-- jQuery -->
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><!-- Popper.js -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><!-- Bootstrap JavaScript -->
 	<script src="./scripts/index.js"></script>
 	<script src="./scripts/header.js"></script>
+	<script src="./scripts/quiz_basics.js"></script>
 </body>
 
 <footer><!-- THIS SECTION IS THE SAME ON ALL PAGES -->
 	<!-- This includes any legal bits and simple site navigation (little to no CSS) -->
 </footer>
-
 </html>
+
