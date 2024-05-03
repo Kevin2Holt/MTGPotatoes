@@ -127,7 +127,7 @@ function showScore(){
     
     //if user got turn overview questions incorrect
     if(incorrectTurnOverview > 0 ){
-        questionElement.innerHTML += " <a href='./turnOverview.html'> Turn Overview </a>" + incorrectTurnOverview;
+        questionElement.innerHTML += " <a href='./turnOverview.html'> Turn Overview </a>";
     }
     
     //Sets the text for the next button to retake quiz
