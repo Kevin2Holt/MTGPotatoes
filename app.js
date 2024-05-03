@@ -18,6 +18,7 @@ app.use(express.urlencoded({extended:true}));
 
 // Get Requests
 app.get("/", (req,res) => {
+	res.locals.title = "MTGP | Home";
 	res.render("index");
 });
 
@@ -26,8 +27,9 @@ app.use("/decks", deckRouter);
 // app.use("/quizes", quizRouter);
 
 app.get("/dictionary", (req,res) => {
-	var dictJSON = jf.readFileSync("./public/database/dictionary.json");
-	res.render("dictionary", dict = dictJSON);
+	res.locals.dict = jf.readFileSync("./public/database/dictionary.json");
+	res.locals.title = "MTGP | Dictionary";
+	res.render("dictionary");
 });
 
 

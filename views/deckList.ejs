@@ -3,8 +3,9 @@
 	<a href="/decks/<%= i %>" class="mtgp_decklistCard text-white">
 		<img class="mtgp_decklistCard_img" src='https://api.scryfall.com/cards/named?exact=<%= deckList[i].decklist[0][1]%>&format=image&version=art_crop' />
 		<div class="imgoverlay"></div>
-		<div class="overlay">
-			<h5 class="mtgp_decklistCard_title"><%= deckList[i].title %></h5>
+		<p class="formatoverlay <%= deckList[i].format %>"><%= deckList[i].format %></p>
+		<div class="overlay text-white">
+			<h5 class="mtgp_decklistCard_title text-white"><%= deckList[i].title %></h5>
 		</div>
 	</a>
 <% } %>

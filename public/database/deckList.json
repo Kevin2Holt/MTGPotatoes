@@ -28,7 +28,7 @@
 			[2, "Touch the Spirit Realm"],
 			[1, "Borrowed Time"],
 			[4, "Invasion of Dominaria"],
-			[1, "Invasion of New Cappenna"]
+			[1, "Invasion of New Capenna"]
 		]
 	},
 	{
@@ -47,7 +47,7 @@
 			[4, "Steam Vents"],
 			[2, "Swiftwater Cliffs"],
 			[4, "Arclight Phoenix"],
-			[4, "Cracling Drake"],
+			[4, "Crackling Drake"],
 			[3, "Goblin Electromancer"],
 			[2, "Irencrag Pyromancer"],
 			[2, "Sprite Dragon"],
@@ -77,9 +77,9 @@
 			[4, "Reinforced Ronin"],
 			[4, "Feldon Ronom Excavator"],
 			[4, "Witchstalker Frenzy"],
-			[3, "Goddric, Cloaked Revler"],
+			[3, "Goddric, Cloaked Reveler"],
 			[2, "Giant Cindermaw"],
-			[2, "Squeen, Dubious Monarch"],
+			[2, "Squee, Dubious Monarch"],
 			[4, "Lightning Strike"],
 			[4, "Monstrous Rage"],
 			[4, "Play With Fire"],
@@ -110,7 +110,7 @@
 			[2, "Disciple of Griselbrand"],
 			[4, "Doomed Traveler"],
 			[2, "Maw of the Obzedat"],
-			[3, "Pious Evangle Flip"],
+			[3, "Pious Evangel"],
 			[2, "Plaguecrafter"],
 			[3, "Vizkopa Guildmage"],
 			[3, "Wall of Limbs"],
@@ -140,7 +140,7 @@
 			[4, "Jungle Hollow"],
 			[6, "Swamp"],
 			[2, "Channeler Initiate"],
-			[2, "Doombape"],
+			[2, "Doomgape"],
 			[4, "Elves of Deep Shadow"],
 			[2, "Flesh-Eater Imp"],
 			[2, "Hapatra, Vizier of Poisons"],
@@ -150,7 +150,7 @@
 			[3, "Putrefy"],
 			[2, "Fireshrieker"],
 			[2, "Loxodon Warhammer"],
-			[2, "E[ic Confrontation"],
+			[2, "Epic Confrontation"],
 			[2, "Nest of Scarabs"],
 			[2, "Phyresis"]
 		]
@@ -159,7 +159,7 @@
 		"id": 5,
 		"title": "Control Rules: Mono-Blue",
 		"description": "Players who had fun with a Mono-Black control deck will have a ton more spellcasting versatility with a Mono-Blue deck. After all, Blue cards are, by nature, control cards - and they provide new options to navigate the battlefield, especially for newbies.\nFor instance, this Mono-Blue deck introduces an alternate win condition in the form of Hedron Alignment. Thanks to Hedron Alignment, players can now win in their upkeep stage just by having this card on the battlefield, in the grave, in exile, and in their hand.\nHowever, players of this deck will also get to use advanced lands, bouncing, scrying, artifacts, and even counterspells. Thanks to counterspells, players can now eliminate pesky cards in the stack. Unfortunately, they have to be careful when to use these counterspells - as vets may lead them into a trap.",
-		"format": "stanndard",
+		"format": "standard",
 		"tags": [
 			"blue",
 			"control",
@@ -280,8 +280,8 @@
 			[4, "Collateral Damage"],
 			[4, "Lightning Strike"],
 			[4, "Rush of Adrenaline"],
-			[4, "Assult Strobe"],
-			[4, "Disintergrate"],
+			[4, "Assault Strobe"],
+			[4, "Disintegrate"],
 			[3, "Flame Slash"],
 			[2, "Traitorous Blood"]
 		]
@@ -308,7 +308,7 @@
 			[4, "Zagras, Thief of Heartbeats"],
 			[3, "Ardent Electromancer"],
 			[2, "Malakir Rebirth"],
-			[2, "Spikefiled Hazard"],
+			[2, "Spikefield Hazard"],
 			[2, "Heartless Act"],
 			[4, "Call of the Death-Dweller"],
 			[2, "Bloodchief's Thirst"]
@@ -332,13 +332,13 @@
 			[4, "Skrelv, Defector Mite"],
 			[4, "Swooping Lookout"],
 			[4, "Gingerbrute"],
-			[4, "Mandible Justicar"],
+			[4, "Mandible Justiciar"],
 			[4, "Patchwork Automaton"],
 			[2, "Syr Ginger, the Meal Ender"],
 			[4, "Basilica Skullbomb"],
 			[4, "Glass Casket"],
 			[4, "Veil of Assimilation"],
-			[4, "Michiko's Rein of Truth"],
+			[4, "Michiko's Reign of Truth"],
 			[2, "Ossification"]
 		]
 	},
