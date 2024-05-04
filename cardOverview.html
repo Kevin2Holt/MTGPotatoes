@@ -15,20 +15,31 @@
 <header><!-- This section is the same on every page -->
 	<!-- This includes any site navigation & other similar -->
 	<nav class="bg-dark text-white row">
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/">Home</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/getting-started">Getting Started</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/quizzes">Quizzes</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/decks">Starter Decks</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/dictionary">Dictionary</a>
+		<span class="openNav" onclick="openNav()">&#9776; </span>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./index.html">Home</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./gettingStarted.html">Getting Started</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./quizes.html">Quizzes</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./decksList.html">Starter Decks</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center active" href="./dictionary.html">Dictionary</a>
 	</nav>
-	
 </header>
 
 <body class="bg-secondary">
+	<!-- This is where this page's content goes -->
 
-<!-- This is where this page's content goes -->
-
-<!-- This is just filler content to briefly explain the purpose of this page -->
+	<!-- Side navigation bar-->
+	<div id="mySidenav" class="sidenav">
+		<a class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="./index.html">Home</a>
+		<a href="./gettingStarted.html">Getting Started</a>
+		<a href="./turnOverview.html">Turn Overview</a>
+		<a href="./cardOverview.html">Card Overview</a>
+		<a href="./cardTypes.html">Card Types</a>
+		<a href="./boardZones.html">Board Zones</a>
+		<a href="./quizes.html">Quizzes</a>
+		<a href="./decksList.html">Starter Decks</a>
+		<a href="./dictionary.html">Dictionary</a>
+	  </div>
 <div class="row">
 	<h1>Card Overview</h1>
 	<p>In Magic: The Gathering, cards are the fundamental components of gameplay, representing spells, creatures, artifacts, lands, and other elements of the game's universe. Each card is uniquely designed with its own name, artwork, abilities, and flavor text, contributing to the rich tapestry of the Magic multiverse.</p>

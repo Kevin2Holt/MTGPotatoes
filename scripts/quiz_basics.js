@@ -141,7 +141,7 @@ function handleNextButton(){
         showQuestion();
     }else{
         showScore();
-    } 
+    }
 }
 // if there are still questions call the handle next button function
 nextButton.addEventListener("click", ()=>{
@@ -152,4 +152,8 @@ nextButton.addEventListener("click", ()=>{
         startQuiz();
     }
 })
-startQuiz();
+
+$(document).ready( () => {
+	startQuiz();
+});
+
