@@ -11,6 +11,10 @@
  */
 
 /* Extra Small <576px Width*/
+* {
+	color:#000;
+}
+
 nav a:hover {
 	font-weight: bold;
 	text-decoration: none;
@@ -72,6 +76,7 @@ nav a:hover {
   }
   
   .sidenav .closebtn {
+  	color: #fff;
 	position: absolute;
 	top: 0;
 	right: 25px;
@@ -84,6 +89,7 @@ nav a:hover {
   }
   
   .openNav{
+  	color: #fff;
 	font-size:20px;
 	cursor:pointer; 
 	margin-left:20px;
