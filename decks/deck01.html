@@ -1,76 +1,160 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!-- Bootstrap -->
 
-	<link rel="stylesheet" href="./styles/sitewide.css">
+	<link rel="stylesheet" href="/styles.css">
 
-	<title>Starter Decks</title>
+	<title>MTGP | Draw the Power: Izzet Phoenix</title>
 </head>
 
 <header><!-- This section is the same on every page -->
 	<!-- This includes any site navigation & other similar -->
 	<nav class="bg-dark text-white row">
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./index.html">Home</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./gettingStarted.html">Getting Started</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./quizes.html">Quizes</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center active" href="./decksList.html">Starter Decks</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./dictionary.html">Dictionary</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/">Home</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/getting-started">Getting Started</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/quizzes">Quizzes</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/decks">Starter Decks</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/dictionary">Dictionary</a>
 	</nav>
+	
 </header>
 
 <body class="bg-secondary">
-	<!-- This is where this page's content goes -->
-	<div class="row">
-	
-		<div class="col-sm-2 pl-4">
-			<h3>Tags:</h3>
+
+<div class="row">
+
+	<div class="col-sm-2" style="padding: 0.5em 0.1em 0 2em;">
+		<h3>Tags:</h3>
+		<p class="mtgp_tag">standard</p>
+		
 			<p class="mtgp_tag">blue</p>
-			<p class="mtgp_tag">draw</p>
-			<p class="mtgp_tag">format-standard</p>
+		
 			<p class="mtgp_tag">red</p>
-		</div>
-		<div class="col pl-4">
-			<h3>Draw the Power: Izzet Phoenix</h3>
-			<p>Izzet Phoenix serves as a handy Red-Blue deck, especially for players who want a handy draw deck. In principle, this deck aims to send Arclight Phoenix to the graveyard, only to bring it back after casting three spells.\nMoreover, this deck utilizes cards that deal damage and create tokens whenever players draw their second card. This strategy becomes handy, especially when much of the other cards in the deck rely on threats, removal spells, and other draw spells.</p>
-		</div>
+		
+			<p class="mtgp_tag">draw</p>
+		
 	</div>
-	<div class="row">
-		<div class="col pl-4" style="border:1px solid black">
-			<h3>Deck List:</h3>
-			<ul>
-				<li>8x Island</li>
-				<li>8x Mountain</li>
-				<li>4x Steam Vents</li>
-				<li>2x Swiftwater Cliffs</li>
-				<li>4x Arclight Phoenix</li>
-				<li>4x Cracling Drake</li>
-				<li>3x Goblin Electromancer</li>
-				<li>2x irencrag Pyromancer</li>
-				<li>2x Sprite Dragon</li>
-				<li>2x Blitz of the Thunder-Raptor</li>
-				<li>2x Mystical Dispute</li>
-				<li>4x Opt</li>
-				<li>4x Radical Idea</li>
-				<li>4x Shock</li>
-				<li>4x Thrill of Possibility</li>
-				<li>3x Improbably Alliance</li>
-			</ul>
-		</div>
+	<div class="col" style="border-left: 1px solid black; padding: 0.5em 0 0.5em 1em">
+		<h3>Draw the Power: Izzet Phoenix</h3>
+		<p>Izzet Phoenix serves as a handy Red-Blue deck, especially for players who want a handy draw deck. In principle, this deck aims to send Arclight Phoenix to the graveyard, only to bring it back after casting three spells.
+Moreover, this deck utilizes cards that deal damage and create tokens whenever players draw their second card. This strategy becomes handy, especially when much of the other cards in the deck rely on threats, removal spells, and other draw spells.</p>
 	</div>
+</div>
+<div style="border-top:1px solid black; padding: 0.5em 1em">
+	<h3>Deck List:</h3>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Island&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">8x Island</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Mountain&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">8x Mountain</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Steam Vents&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Steam Vents</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Swiftwater Cliffs&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">2x Swiftwater Cliffs</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Arclight Phoenix&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Arclight Phoenix</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Crackling Drake&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Crackling Drake</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Goblin Electromancer&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">3x Goblin Electromancer</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Irencrag Pyromancer&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">2x Irencrag Pyromancer</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Sprite Dragon&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">2x Sprite Dragon</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Blitz of the Thunder-Raptor&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">2x Blitz of the Thunder-Raptor</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Mystical Dispute&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">2x Mystical Dispute</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Opt&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Opt</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Radical Idea&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Radical Idea</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Shock&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Shock</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Thrill of Possibility&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Thrill of Possibility</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Improbable Alliance&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">3x Improbable Alliance</h6>
+		</div>
+	
+</div>
 
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script><!-- Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><!-- Bootstrap -->
 
-	<script src="./scripts/jquery_3_7_1.js"></script><!-- jQuery -->
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><!-- Popper.js -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><!-- Bootstrap JavaScript -->
-	<script src="./scripts/index.js"></script>
+	<script src="/script.js"></script>
+	<!-- <script src="./scripts/header.js"></script> -->
 </body>
 
-<footer><!-- THIS SECTION IS THE SAME ON ALL PAGES -->
+<footer><!-- This section is the same on every page -->
 	<!-- This includes any legal bits and simple site navigation (little to no CSS) -->
 </footer>
-
 </html>

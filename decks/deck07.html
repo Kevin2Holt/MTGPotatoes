@@ -1,79 +1,152 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!-- Bootstrap -->
 
-	<link rel="stylesheet" href="./styles/sitewide.css">
+	<link rel="stylesheet" href="/styles.css">
 
-	<title>Starter Decks</title>
+	<title>MTGP | Buff Galore: Mono-White</title>
 </head>
 
 <header><!-- This section is the same on every page -->
 	<!-- This includes any site navigation & other similar -->
 	<nav class="bg-dark text-white row">
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./index.html">Home</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./gettingStarted.html">Getting Started</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./quizes.html">Quizes</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center active" href="./decksList.html">Starter Decks</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./dictionary.html">Dictionary</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/">Home</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/getting-started">Getting Started</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/quizzes">Quizzes</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/decks">Starter Decks</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/dictionary">Dictionary</a>
 	</nav>
+	
 </header>
 
 <body class="bg-secondary">
-	<!-- This is where this page's content goes -->
-	<div class="row">
-	
-		<div class="col-sm-2 pl-4">
-			<h3>Tags:</h3>
-			<p class="mtgp_tag">angel</p>
-			<p class="mtgp_tag">black</p>
-			<p class="mtgp_tag">format-standard</p>
+
+<div class="row">
+
+	<div class="col-sm-2" style="padding: 0.5em 0.1em 0 2em;">
+		<h3>Tags:</h3>
+		<p class="mtgp_tag">standard</p>
+		
 			<p class="mtgp_tag">white</p>
-		</div>
-		<div class="col pl-4">
-			<h3>Life for Life: Inexpensive Angels</h3>
-			<p>Angels take center stage in Inexpensive Angels, a budget deck perfect for Magic: The Gathering players who prefer overwhelming foes with the sheer force of their health. Key components to this deck are effects from its central angelic figures: each new Angel gets +1/1 per each existing Angel (Giada), plays a Land, or casts a Mana 3 or lower permanent from the grave that adds 2 Life when it’s sent to the grave (Serra Paragon), and returning a destroyed non-token creature to the player’s hand in the next end step (Liesa).</br>The latter’s bonus of enemy creatures being exiled upon death makes Liesa a particularly dangerous card to possess. However, on top of predictable Life gains (Lunarch Veteran, Inspiring Overseer), the deck’s other spells can also exile (Borrowed Time), and destroy (Go for the Throat, Sheoldred’s Edict, Stroke of Midnight, Touch the Spirit Realm) cards.</p>
-		</div>
+		
+			<p class="mtgp_tag">exile</p>
+		
+			<p class="mtgp_tag">auras</p>
+		
+			<p class="mtgp_tag">buffs</p>
+		
+			<p class="mtgp_tag">tokens</p>
+		
 	</div>
-	<div class="row">
-		<div class="col pl-4" style="border:1px solid black">
-			<h3>Deck List:</h3>
-			<ul>
-				<li>10x Plains</li>
-				<li>9x Swamp</li>
-				<li>4x Scoured Barrens</li>
-				<li>4x Inspiring Overseer</li>
-				<li>3x Spirited Companion</li>
-				<li>3x Lunarch Veteran</li>
-				<li>3x Ambitious Farmhand</li>
-				<li>3x Giada, Font of Hope</li>
-				<li>2x Phyrexian Missionary</li>
-				<li>1x Serra Paragon</li>
-				<li>1x Liesa, Forgotten Archangel</li>
-				<li>4x Go for the Throat</li>
-				<li>1x Sheoldred's Edict</li>
-				<li>1x Stroke of Midnight</li>
-				<li>3x Render Inert</li>
-				<li>2x Touch the Spirit Realm</li>
-				<li>1x Borrowed Time</li>
-				<li>4x Invasion of Dominaria</li>
-				<li>1x Invasion of New Cappenna</li>
-			</ul>
-		</div>
+	<div class="col" style="border-left: 1px solid black; padding: 0.5em 0 0.5em 1em">
+		<h3>Buff Galore: Mono-White</h3>
+		<p>Players who want to try out deck-building might be confused with some slang MTG vets use throughout their deck-construction process. And unlike the defensive Green and aggressive Red cards, White cards tend to lean toward support. Thanks to effects such as Anthem, a nickname granted to cards that buff player creatures, players can add a ton of versatility to their battle strategy.
+Gamers can now try powering up their creatures using card effects. This Mono-White deck introduces exiles, creature auras, and choosing when to benefit from certain combos. For instance, two Perimeter Captains defending the player can grant their owners +8 life. However, four creatures defending the player might grant their player +32 life. This deck also introduces new concepts such as auras and tokens, as well as Protection and Defender.</p>
 	</div>
+</div>
+<div style="border-top:1px solid black; padding: 0.5em 1em">
+	<h3>Deck List:</h3>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Plains&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">24x Plains</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Crusader of Odric&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">2x Crusader of Odric</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Fencing Ace&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Fencing Ace</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Knight-Captain of Eos&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">1x Knight-Captain of Eos</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Mentor of the Meek&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">2x Mentor of the Meek</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Valiant Guard&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Valiant Guard</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Veteran Armorsmith&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Veteran Armorsmith</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Veteran Swordsmith&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Veteran Swordsmith</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Raise the Alarm&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">4x Raise the Alarm</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Angelic Gift&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">2x Angelic Gift</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Glorious Anthem&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">2x Glorious Anthem</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Oblivion Ring&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">2x Oblivion Ring</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Pacifism&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">3x Pacifism</h6>
+		</div>
+	
+		<div class="mtgp_card">
+			<img src="https://api.scryfall.com/cards/named?exact=Pentarch Ward&format=image"
+				class="mtgp_decklistImg" />
+			<h6 class="text-white">2x Pentarch Ward</h6>
+		</div>
+	
+</div>
 
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script><!-- Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><!-- Bootstrap -->
 
-	<script src="./scripts/jquery_3_7_1.js"></script><!-- jQuery -->
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><!-- Popper.js -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><!-- Bootstrap JavaScript -->
-	<script src="./scripts/index.js"></script>
+	<script src="/script.js"></script>
+	<!-- <script src="./scripts/header.js"></script> -->
 </body>
 
-<footer><!-- THIS SECTION IS THE SAME ON ALL PAGES -->
+<footer><!-- This section is the same on every page -->
 	<!-- This includes any legal bits and simple site navigation (little to no CSS) -->
 </footer>
-
 </html>

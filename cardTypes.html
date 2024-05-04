@@ -1,95 +1,108 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!-- Bootstrap -->
 
-	<link rel="stylesheet" href="./styles/sitewide.css">
+	<link rel="stylesheet" href="/styles.css">
 
-	<title>Card Types</title>
+	<title>MTGP | Card Types</title>
 </head>
 
 <header><!-- This section is the same on every page -->
 	<!-- This includes any site navigation & other similar -->
 	<nav class="bg-dark text-white row">
-		<span class="openNav" onclick="openNav()">&#9776; </span>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./index.html">Home</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center active" href="./gettingStarted.html">Getting Started</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./quizes.html">Quizzes</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./decksList.html">Starter Decks</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./dictionary.html">Dictionary</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/">Home</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/getting-started">Getting Started</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/quizzes">Quizzes</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/decks">Starter Decks</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="/dictionary">Dictionary</a>
 	</nav>
+	
 </header>
 
 <body class="bg-secondary">
-	<!-- This is where this page's content goes -->
 
-	<!-- Side navigation bar-->
-	<div id="mySidenav" class="sidenav">
-		<a class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="./index.html">Home</a>
-		<a href="./gettingStarted.html">Getting Started</a>
-		<a href="./turnOverview.html">Turn Overview</a>
-		<a href="./cardOverview.html">Card Overview</a>
-		<a href="./cardTypes.html">Card Types</a>
-		<a href="./boardZones.html">Board Zones</a>
-		<a href="./quizes.html">Quizzes</a>
-		<a href="./decksList.html">Starter Decks</a>
-		<a href="./dictionary.html">Dictionary</a>
-	  </div>
-	<div class="container-fluid p-3"></div>
-
-	<div class="row">
-		<a class="col-md-2 btn-dark text-white p-3 text-center btn" href="./gettingStarted.html">Getting Started Home</a>
-		<a class="col-md-2 btn-dark text-white p-3 text-center btn" href="./turnOverview.html">Turn Overview</a>
-		<a class="col-md-2 btn-dark text-white p-3 text-center btn" href="./cardOverview.html">Card Overview</a>
-		<a class="col-md-2 btn-dark text-white p-3 text-center btn active" href="./cardTypes.html">Card Types</a>
-		<a class="col-md-2 btn-dark text-white p-3 text-center btn" href="./boardZones.html">Board Zones</a>
+<!-- This is where this page's content goes -->
+	
+<div class="row">
+	<div class="col-sm p-4">
+		<!-- This is just filler content to briefly explain the purpose of this page -->
+		<h3>Card Types</h3>
+		<p>This is some filler text and should be replaced with something that introduces the topic and gets the reader interested in learning more.</p>
 	</div>
-
-
-	<div class="row">
-		<div class="col-sm-2 pl-4">
-			<!-- This is just filler content to briefly explain the purpose of this page -->
-			<h3>Card Types</h3>
-			<p>This page will explain in depth the different card types</p>
-			<p>Super-types</p>
-			<ul>
-				<li>Land <i>(Permanent)</i>: Land represents the magical resources that players can use to cast spells or summon creatures. Players can play one land card per turn. There are various subtypes of land such as plains, islands, mounntains, etcetera.</li>
-				<li>Creature <i>(Permanent)</i>: Creatures are the primary way players interact with each other. They can be a summon, beat, or monster. Each creature jhas various power, toughness, and abilities.</li>
-				<li>Artifact <i>(Permanent)</i>: Artifacts are any magical object, device, or construct that players use. Artifics provide abilities, effects, or mana.</li>
-				<li>Enchantment <i>(Permanent)</i>: Enchantments are spells or effects attached to any permanents, typically a creatyre or land.</li>
-				<li>Planeswalker <i>(Permanent)</i>: Planeswalkers are allies that players can summon for aid. They have loyalty abilities and can be attacked by creatures, although players can redirect the damage to themselves. If a Planeswalker's loyalty reaches zero it is considered destroyed.</li>
-				<li>Battle <i>(Permanent)</i>: Battle cards must be cast during a players main turn and indicate a battle is taking place. They enter the field with defense counters and must be defeated to be removed.</li>
-				<li>Instant: Instants are spells that can be played at any time, including the opponent's turn. Their effects are immediate when cast and they are then considered destoryed.</li>
-				<li>Sorcery: Sorceries are spells that can only be played during a players main turn and when the stack is empty. They cannot be played at instant speed or as a response.</li>
-			</ul>
-			<p>There will also be a brief explanation of subtypes</p>
-			<p>Also mention Tokens & Emblems</p>
-
+	<div class="col-sm-5 p-4" style="border:1px solid black">
+		<div class="container">
+			<h3>Land</h3>
+			<p>Lands are the most important part of a deck. Lands give you the mana you need to play the rest of your cards. You can only play up to 1 land card on each of your turns during either of your main phases.</p>
+			<div class="container">
+				<h4>Basic Lands</h4>
+				<p>The most common type of card is the “basic land”. These are simple cards that can be tapped for a single mana of their color:</p>
+				<ul class="unstyled">
+					<li>"Plains" = White</li>
+					<li>"island" = Blue</li>
+					<li>"Swamp" = Black</li>
+					<li>"Mountain" = Red</li>
+					<li>"Forest" = Green</li>
+				</ul>
+			</div>
 		</div>
-		<div class="col-sm-2 pl-4" style="border:1px solid black">
-			<h3>Getting Started!</h3>
-			<p>Et adipisicing enim officia dolor elit nulla consequat velit id deserunt cupidatat nisi exercitation voluptate in dolor laborum voluptate. Irure magna in in exercitation enim aliquip veniam non exercitation ut dolore est eiusmod magna ullamco id pariatur. Aute ut est incididunt qui anim esse dolore ad aliquip dolore in occaecat consequat esse nostrud culpa aliquip nisi. Est consequat voluptate esse non fugiat elit pariatur ex sunt velit.</p>
+		<div class="container">
+			<h3>Creature</h3>
+			<p>Creatures are your main line of defense. They are your attackers and defenders. Each creature has a “Power” and “Toughness”. This is always written as “P/T” with the power first, before the slash, and the toughness after. This is the same when an effect gives a creature “+1/+1”, or less commonly “+0/+1”.</p>
 		</div>
-		<div class="col-sm-2 pl-4" style="border:1px solid black">
-			<h3>What's Next?</h3>
-			<p>Fugiat veniam sit reprehenderit pariatur adipisicing sed laboris sit aliquip eiusmod ad laboris exercitation est. Amet nisi et labore quis id deserunt ullamco nostrud culpa dolor voluptate occaecat in. Pariatur aliquip amet nostrud commodo elit nulla sint magna. Est irure minim excepteur incididunt culpa ad eiusmod adipisicing irure fugiat dolor laborum fugiat cillum commodo deserunt. Reprehenderit esse laboris id proident ad anim velit esse laborum.</p>
+		<div class="container">
+			<h3>Instant</h3>
+			<p>Instants are cards that you can play anytime you have “Priority”. Without going into specifics, basically you can play these in response to other actions, even if it’s not your turn. This is what is known as “Instant speed”, where you can play a card out of turn. While only instants can be played at instant speed by default, other effects such as “flash” can allow you to play other cards out of turn.</p>
+		</div>
+		<div class="container">
+			<h3>Sorcery</h3>
+			<p>Sorceries are similar to instants, but can only be played during the main phases of your turn. This is known as “Sorcery speed”. Simply put, anything that isn’t “instant speed” is “sorcery speed” and thus can only be played at certain times.</p>
+			<p>Sorceries are one-time effects, where the card goes to the graveyard after it resolves. They also tend to be more powerful than instants and tend to cost more mana as well.</p>
+		</div>
+		<div class="container">
+			<h3>Enchantment</h3>
+			<p>These cards give an effect to something else. Typically either a benefit (buff) or a drawback (de-buff).</p>
+			<p>Auras are a specific type of enchantment that you place on a player and affect either them or all of the cards they control. Non-Aura enchantments will have you target something specific such as a creature.</p>
+		</div>
+		<div class="container">
+			<h3>Artifact</h3>
+			<p>Depending on the card, artifacts are kind of like a mix between creatures and enchantments. They can give general effects like an enchantment would, or they might have specific abilities for you to use.</p>
+			<p>Some artifacts, known as equipment, are attached to creatures in the same way you would cast an enchantment. There are two big factors that distinguish equipment:</p>
+			<ol>
+				<li>You play the artifact first, then you must also pay the “equip” cost to attach it to the creature. This can be done right after casting it, though it’s not required.</li>
+				<li>Similarly, you can re-equip your equipment, or attach it to a different creature by paying the “equip” cost.</li>
+				<li>Equipment doesn’t leave the battlefield when the creature they’re attached to dies. On the other hand, enchantments leave the battlefield (into the graveyard) if they aren’t either an aura or attached to something.</li>
+			</ol>
+		</div>
+		<div class="container">
+			<h3>Battle</h3>
+			<p>Battles are a special type of card that you play on an opponent. That opponent is then in charge of protecting it. You can either target it with a spell or ability or attack it in the same way you would a player or planeswalker.</p>
+			<p>Each battle has an immediate effect, like playing a sorcery, and a second side to the card. Once the battle is defeated, the player who finished it off (did the last damage) then gets to cast the other side (there’s no mana cost). The backside will have any of the other card types on it meaning that the reward could be a powerful creature or an artifact with a unique ability. It could also be a one-time effect such as a sorcery or instant.</p>
+		</div>
+		<div class="container">
+			<h3>Planeswalker</h3>
+			<p>Planeswalkers are unique and powerful cards. Each planeswalker has a number in the bottom-right (where you find the power/toughness on a creature) which represents how many “loyalty counters” it enters the battlefield with. “Loyalty counters” are like its health, once the planeswalker loses all of its loyalty counters, it is defeated (leaves the battlefield).</p>
+			<h4>Loyalty Abilities</h4>
+			<p>You will find at least one “Loyalty ability” (typically more than one) on each planeswalker. On your turn (sorcery speed), you can activate one of each planeswalker’s loyalty abilities. Each ability will come with a “cost” in loyalty counters. Usually a planeswalker will have a “plus ability”, that adds loyalty counters to it, and one or two “minus abilities”, that will remove that many loyalty counters.</p>
+			<p><i>*Note that while creatures can have negative toughness, planeswalkers can not have negative loyalty counters. That means that you must have at least enough loyalty counters to activate the ability. For example, you can’t activate a loyalty ability with a cost of “-8” if the planeswalker only has 3 loyalty counters.</i></p>
 		</div>
 	</div>
+</div>
 
 
-	<script src="./scripts/jquery_3_7_1.js"></script><!-- jQuery -->
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><!-- Popper.js -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><!-- Bootstrap JavaScript -->
-	<script src="./scripts/index.js"></script>
-	<script src="./scripts/header.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script><!-- Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><!-- Bootstrap -->
+
+	<script src="/script.js"></script>
+	<!-- <script src="./scripts/header.js"></script> -->
 </body>
 
-<footer><!-- THIS SECTION IS THE SAME ON ALL PAGES -->
+<footer><!-- This section is the same on every page -->
 	<!-- This includes any legal bits and simple site navigation (little to no CSS) -->
 </footer>
-
 </html>
