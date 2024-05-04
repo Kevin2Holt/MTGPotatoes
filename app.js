@@ -4,7 +4,7 @@ const jf = require("jsonfile");
 // Routers
 const starterGuideRouter = 	require("./routers/starterGuideRouter");
 const deckRouter =			require("./routers/deckRouter");
-// const quizRouter =			require("./routers/quizRouter");
+const quizRouter =			require("./routers/quizRouter");
 
 // Setup
 const app = express();
@@ -24,7 +24,7 @@ app.get("/", (req,res) => {
 
 app.use("/getting-started", starterGuideRouter);
 app.use("/decks", deckRouter);
-// app.use("/quizes", quizRouter);
+app.use("/quiz", quizRouter);
 
 app.get("/dictionary", (req,res) => {
 	res.locals.dict = jf.readFileSync("./public/database/dictionary.json");

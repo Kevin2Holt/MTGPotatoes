@@ -1,0 +1,19 @@
+<%- include("./partials/head.ejs"); %>
+
+<% for(i=0; i < quizData.questions.length; i++) { %>
+<div class="quiz-container">
+	<h2><%= quizData.title %></h2>
+	<div class="quiz" id="question_<%= i %>">
+		<h3 class="question"><%= quizData.questions[i].question %></h3>
+		<div class="answer-buttons">
+			<button class="answer-btn"><%= quizData.questions[i].answers[0].text %></button>
+			<button class="answer-btn"><%= quizData.questions[i].answers[1].text %></button>
+			<button class="answer-btn"><%= quizData.questions[i].answers[2].text %></button>
+			<button class="answer-btn"><%= quizData.questions[i].answers[3].text %></button>
+		</div>
+	</div>
+	<button id="next-btn">Next</button>
+</div>
+<% } %>
+
+<%- include("./partials/foot.ejs"); %>

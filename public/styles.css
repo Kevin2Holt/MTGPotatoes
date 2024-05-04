@@ -92,6 +92,8 @@
 	.mtgp_getStart_navLink:hover * {
 		background-color: #50555f;
 	}
+
+	
 /*404 Page*/
 	#errorMessage{
 		text-align: center;
