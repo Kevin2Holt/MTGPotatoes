@@ -1,19 +1,21 @@
 <%- include("./partials/head.ejs"); %>
 
-<% for(i=0; i < quizData.questions.length; i++) { %>
-<div class="quiz-container">
+
+<div class="mtgp_quiz-container">
 	<h2><%= quizData.title %></h2>
-	<div class="quiz" id="question_<%= i %>">
-		<h3 class="question"><%= quizData.questions[i].question %></h3>
-		<div class="answer-buttons">
-			<button class="answer-btn"><%= quizData.questions[i].answers[0].text %></button>
-			<button class="answer-btn"><%= quizData.questions[i].answers[1].text %></button>
-			<button class="answer-btn"><%= quizData.questions[i].answers[2].text %></button>
-			<button class="answer-btn"><%= quizData.questions[i].answers[3].text %></button>
+	<% for(i=0; i < quizData.questions.length; i++) { %>
+	<div class="mtgp_quiz" id="question_<%= i %>">
+		<h3 class="mtgp_question"><%= quizData.questions[i].question %></h3>
+		<div class="mtgp_answer-buttons">
+			<button class="mtgp_answer-btn" id="quiz_q<%= i %>_0"><%= quizData.questions[i].answers[0].text %></button>
+			<button class="mtgp_answer-btn" id="quiz_q<%= i %>_1"><%= quizData.questions[i].answers[1].text %></button>
+			<button class="mtgp_answer-btn" id="quiz_q<%= i %>_2"><%= quizData.questions[i].answers[2].text %></button>
+			<button class="mtgp_answer-btn" id="quiz_q<%= i %>_3"><%= quizData.questions[i].answers[3].text %></button>
 		</div>
 	</div>
-	<button id="next-btn">Next</button>
+	<% } %>
+	<button type="button" disabled  id="next-btn" class="mtgp_disabled" onclick="switchQuestion()">Next</button>
 </div>
-<% } %>
+
 
 <%- include("./partials/foot.ejs"); %>
