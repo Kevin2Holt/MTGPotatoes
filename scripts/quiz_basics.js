@@ -251,7 +251,10 @@ function startQuiz(){
     //Sets the score to zero
     score = 0;
 
-    incorrectTurnOverview, incorrectDeckOverview, incorrectCardOverview, incorrectPlayOverview = 0;
+    incorrectTurnOverview = 0;
+    incorrectDeckOverview = 0;
+    incorrectCardOverview = 0;
+    incorrectPlayOverview = 0;
 
     //Sets this button HTML to next, this is necessary because it gets changed later on
     nextButton.innerHTML = "Next";
@@ -354,8 +357,19 @@ function showScore(){
 
     //if user got turn overview questions incorrect
     if(incorrectTurnOverview > 0 ){
-        questionElement.innerHTML += " <a href='./turnOverview.html'> Turn Overview </a>";
+        questionElement.innerHTML += " <a href='./turnOverview.html'> Turn Overview </a>"
     }
+    
+    if(incorrectDeckOverview > 0 ){
+        questionElement.innerHTML += " <a href='./decksList.html'> Starter decks </a>";
+    }
+    if(incorrectCardOverview > 0 ){
+        questionElement.innerHTML += " <a href='./cardOverview.html'> Card Overview </a>";
+    }
+    if(incorrectPlayOverview > 0 ){
+        questionElement.innerHTML += " <a href=''> play Overview </a>";
+    }
+
 
     //Sets the text for the next button to retake quiz
     nextButton.innerHTML = "Retake quiz";
