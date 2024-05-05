@@ -21,8 +21,9 @@ nav a:hover {
 	font-weight: bold;
 	text-decoration: none;
 }
-
-
+body{
+	background:rgb(207, 207, 218);
+}
 /* Small >=576px Width*/
 @include media-breakpoint-up(sm) {
 
