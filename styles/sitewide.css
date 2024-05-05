@@ -70,7 +70,7 @@ nav a:hover {
   }
   
   .sidenav a:hover {
-	color: rgba(255, 0, 0, 0.781); /*edit the color of nav when highlighted*/
+	background:rgb(151, 151, 151);
 	font-weight: bold;
 	text-decoration: none;
   }
