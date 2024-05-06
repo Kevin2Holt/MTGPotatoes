@@ -1,5 +1,13 @@
+<!----------------------------------------------
+	PLEASE REFERENCE THE "INFO.txt" FILE
+	FOR INFORMATION ABOUT THE GENERAL PURPOSE
+	OF EACH FILE. THANKS!
+----------------------------------------------->
+
+<!-- Includes the partial "HTML"/ejs from the specified file -->
 <%- include("./partials/head.ejs"); %>
 
+<!-- This loops through every item in the dictionary database, adding a new row for each -->
 <% for(i=0; i < dict.length; i++) { %>
 	<div class="row" style="border-bottom: 1px solid black;">
 		<div class="col-2" style="border-right: 1px solid rgb(105,105,105);">
@@ -14,4 +22,5 @@
 	</div>
 <% } %>
 
+<!-- Includes the partial "HTML"/ejs from the specified file -->
 <%- include("./partials/foot.ejs"); %>

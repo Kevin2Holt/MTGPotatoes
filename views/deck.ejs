@@ -1,3 +1,10 @@
+<!----------------------------------------------
+	PLEASE REFERENCE THE "INFO.txt" FILE
+	FOR INFORMATION ABOUT THE GENERAL PURPOSE
+	OF EACH FILE. THANKS!
+----------------------------------------------->
+
+<!-- Includes the partial "HTML"/ejs from the specified file -->
 <%- include("./partials/head.ejs"); %>
 
 <div class="row">
@@ -5,6 +12,7 @@
 	<div class="col-sm-2" style="padding: 0.5em 0.1em 0 2em;">
 		<h3>Tags:</h3>
 		<p class="mtgp_tag"><%= deckData.format %></p>
+		<!-- This loops through every item in the database for this deck, adding a new item for each -->
 		<% for(i=0; i < deckData.tags.length; i++) { %>
 			<p class="mtgp_tag"><%= deckData.tags[i] %></p>
 		<% } %>
@@ -16,6 +24,7 @@
 </div>
 <div style="border-top:1px solid black; padding: 0.5em 1em">
 	<h3>Deck List:</h3>
+	<!-- This loops through every item in the database for this deck, adding a new card for each -->
 	<% for(i=0; i < deckData.decklist.length; i++) { %>
 		<div class="mtgp_card">
 			<img src="https://api.scryfall.com/cards/named?exact=<%= deckData.decklist[i][1] %>&format=image"
@@ -25,4 +34,5 @@
 	<% } %>
 </div>
 
+<!-- Includes the partial "HTML"/ejs from the specified file -->
 <%- include("./partials/foot.ejs"); %>

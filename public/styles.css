@@ -93,7 +93,7 @@
 		background-color: #50555f;
 	}
 
-	.mtgp_quiz-container {
+	#mtgp_quiz-container {
 		width: 90%;
 		max-width: 600px;
 		margin: 100px auto 0;
@@ -101,7 +101,7 @@
 		border-radius:10px;
 		padding: 30px;
 	}
-	.mtgp_quiz-container h2 {
+	#mtgp_quiz-container h2 {
 		font-size: 25px;
 		color: #001e4d;
 		font-weight: 600;
@@ -111,6 +111,7 @@
 	.mtgp_quiz {
 		padding: 20px 0;
 		display: none;
+		min-width: 550px;
 	}
 	.mtgp_quiz h3 {
 		font-size: 18px;
@@ -147,7 +148,6 @@
 		margin: 20px auto 0;
 		border-radius:4px;
 		cursor:pointer;
-/*		display:none;*/
 	}
 	.mtgp_disabled {
 		background-color: #3a485e !important;
@@ -157,8 +157,30 @@
 		background-color:#4f4f4f;
 		color:white;
 	}
-	#question_0 {
-		display: inline-block;
+	#quiz_description-container {
+		padding: 5pt;
+		margin-top: 5pt;
+		border: 1px solid #000;
+		border-radius: 4px;
+		display: none;
+	}
+	#quiz_description {
+		
+	}
+	#quiz_description-link {
+		color: #005;
+	}
+	.mtgp_quiz_ans-disabled {
+		background-color: #999;
+		color: #666;
+	}
+	.mtgp_quiz_correct {
+		background-color: #0f9e29;
+		color: #000;
+	}
+	.mtgp_quiz_wrong {
+		background-color: #c10b0b;
+		color: #000;
 	}
 /*404 Page*/
 	#errorMessage{
