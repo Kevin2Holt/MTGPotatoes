@@ -8,28 +8,27 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!-- Bootstrap -->
 
 	<link rel="stylesheet" href="./styles/sitewide.css">
-
 	<title>MTGP | Card Overview</title>
 </head>
 
 <header><!-- This section is the same on every page -->
 	<!-- This includes any site navigation & other similar -->
-	<nav class="bg-dark text-white row">
+	<nav class="bg-dark text-white">
 		<span class="openNav" onclick="openNav()">&#9776; </span>
 		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./index.html">Home</a>
 		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./gettingStarted.html">Getting Started</a>
 		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./quiz_basics.html">Quiz</a>
 		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./decksList.html">Starter Decks</a>
-		<a class="p-3 text-white col-md-2 btn btn-dark text-center active" href="./dictionary.html">Dictionary</a>
+		<a class="p-3 text-white col-md-2 btn btn-dark text-center" href="./dictionary.html">Dictionary</a>
 	</nav>
 </header>
 
-<body class="bg-secondary">
+<body>
 	<!-- This is where this page's content goes -->
 
 	<!-- Side navigation bar-->
 	<div id="mySidenav" class="sidenav">
-		<a class="closebtn" onclick="closeNav()">&times;</a>
+		<a class="closebtn" style="color:white" onclick="closeNav()">&times;</a>
 		<a href="./index.html">Home</a>
 		<a href="./gettingStarted.html">Getting Started</a>
 		<a href="./turnOverview.html">Turn Overview</a>
@@ -40,128 +39,131 @@
 		<a href="./decksList.html">Starter Decks</a>
 		<a href="./dictionary.html">Dictionary</a>
 	  </div>
-<div class="row">
-	<h1>Card Overview</h1>
-	<p>In Magic: The Gathering, cards are the fundamental components of gameplay, representing spells, creatures, artifacts, lands, and other elements of the game's universe. Each card is uniquely designed with its own name, artwork, abilities, and flavor text, contributing to the rich tapestry of the Magic multiverse.</p>
-	<p>There are 5 basic compnents of a card:</p>
-	<ul>
-		<li>Information</li>
-		<li>Mana Cost</li>
-		<li>Card Type</li>
-		<li>Text</li>
-		<li>Power/Toughness (Creatures)</li>
-	</ul>
-</div>
-<div class="row">
-	<div class="col-5">
-		<div class="container">
-			<h3>Info</h3>
-			<p>While these could be their own things, I decided to group them together since they only serve the purpose of providing info that doesn’t have an impact during the game.</p>
-		</div>
-		<div class="container">
-			<h5>Name</h5>
-			<p>The name may seem fairly straightforward, but it is actually one of the more important pieces of info. Cards come from different sets and have different prints (see “Collector Info”). However, each name is unique in the sense that every version of a card named “Sol Ring” will always have the same function. No matter when it was printed or what set, print, showcase, etc. it is, the name separates unique cards.</p>
-			<p>This is primarily important in deck building. Depending on the format you’re playing, decks are built using different rules. Standard, the most common format, has a rule that you can only have up to 4 copies of a card in each deck (ignoring basic lands). Duplicates (copies) are determined by the name. This means that even if you have 5 different printings of a card named “Sol Ring”, you can only put 4 of them into the deck.</p>
-		</div>
-		<div class="container">
-			<h5>Color & Color Identity</h5>
-			<p>Each card has a color, sometimes known as its “color identity”. This is simply the combination of colors used (typically in the mana cost). There are a few occasions where a color is used in an ability’s cost but not in the card’s mana cost. In this case, those colors still apply to the card’s color identity.</p>
-			<p>Color and color identity has very limited application outside of certain formats. Commander, the most popular casual format, has a rule in its deck building that you can only use cards that have the same color identity as your commander (a specifically chosen creature). This does mean that if your commander’s identity is Blue-Green, you can still use cards that only have blue or are only green.</p>
-			<p>It only shows up in a handful of cases, but it is worth noting that lands have a color identity in reference to deck building, but get treated as colorless for every effect during the game.</p>
-		</div>
-		<div class="container">
-			<h5>Rarity</h5>
-			<p>Rarity is a pretty simple concept. Some cards are more common than others. In a general sense, the less common a card is, the more powerful it generally is.</p>
-			<p>The rarities are:</p>
+
+	<div class="wrapper"></div>
+		<div class="row">
+			<h1>Card Overview</h1>
+			<p>In Magic: The Gathering, cards are the fundamental components of gameplay, representing spells, creatures, artifacts, lands, and other elements of the game's universe. Each card is uniquely designed with its own name, artwork, abilities, and flavor text, contributing to the rich tapestry of the Magic multiverse.</p>
+			<p>There are 5 basic compnents of a card:</p>
 			<ul>
-				<li>Common</li>
-				<li>Uncommon</li>
-				<li>Rare</li>
-				<li>Mythic</li>
-			</ul>
-			<p>Depending on who you talk to, some people might put basic lands in their own rarity below commons. Basic lands are “tossed around” and “traded” a lot more casually than any other card, sometimes even being given for free. There are also a couple of weird, obscure rarities that have only shown up in their unique thing, but you won’t need to worry about any of those.</p>
-		</div>
-		<div class="container">
-			<h5>Flavor Text</h5>
-			<p>Some cards have some extra text at the bottom of the text area. This is known as “Flavor Text”. It’s basically just extra fluff that doesn’t impact the game at all and is there purely to add some “flavor”. They usually reference something in the MTG lore.</p>
-			<p>You can safely ignore flavor text if you want to.</p>
-		</div>
-		<div class="container">
-			<h5>Art & Artist</h5>
-			<p>Every card has some art. Typically this is the picture at the top of the card, though there are some special versions that have “extended art” or are “full art”. Similar to flavor text, the art is there to add flavor and ambiance to the card. Thus, it can generally be ignored if you want.</p>
-			<p>Somewhere on the card, usually the bottom with the collector info, you’ll find a name next to a feather-looking icon. That is the artist that created the art for that card. You should always give credit where it is due. They do an amazing job.</p>
-		</div>
-		<div class="container">
-			<h5>Collector Info</h5>
-			<p>This is all of the extra bits of information at the bottom of the card. You’ll find a 3-4 letter code indicating which set that printing came from along with some numbers (or only one number for older cards). The numbers are 3 digits representing which card number it is.</p>
-			<p>Each set comes with a certain number of cards (by name and print). This total number is indicated by the second number (like a fraction). The first number simply indicates which spot that print takes in the set.</p>
-			<p>All this information is really only important for collectors and when buying/selling cards.</p>
-		</div>
-	</div>
-	<div class="col-5">
-		<h3>Mana Cost</h3>
-		<p>In the upper-right corner of the card you’ll find a set of symbols and sometimes a number in a gray circle. This is the mana cost. In other words, that is how much mana and what colors of mana you need to spend to cast that card. The extra number in the gray circle is considered “colorless” mana and any color can be used in its place. Though, you still need to pay the amount of mana indicated by the number.</p>
-		<p>“CMC” or Converted Mana Cost is a really simple concept. CMC just takes all the mana needed to cast a card, and counts it, ignoring the color. So, for example, a card that costs a Red mana, a Blue mana, and 2 colorless mana has a CMC of 4.</p>
-	</div>
-	<div class="col-5">
-		<div class="container">
-			<h3>Card Type</h3>
-			<p>Each card has a type that tells you how it is meant to be played. There are a handful of different categories that types fit into depending on how they affect the game. These are known as “Types”, “Supertypes” and “Subtypes”.</p>
-			<p>There are 8 main types:</p>
-			<ul>
-				<li>Land</li>
-				<li>Creature</li>
-				<li>Instant</li>
-				<li>Sorcery</li>
-				<li>Enchantment</li>
-				<li>Artifact</li>
-				<li>Battle</li>
-				<li>Planeswalker</li>
+				<li>Information</li>
+				<li>Mana Cost</li>
+				<li>Card Type</li>
+				<li>Text</li>
+				<li>Power/Toughness (Creatures)</li>
 			</ul>
 		</div>
-		<div class="container">
-			<h5>Supertypes</h5>
-			<p>There are only 5 official supertypes:</p>
-			<ul>
-				<li>Basic</li>
-				<li>Legendary</li>
-				<li>Ongoing</li>
-				<li>Snow</li>
-				<li>World</li>
-			</ul>
-			<p>While each has its own specific rulings, supertypes don’t typically have a huge impact on the game.</p>
-		</div>
-		<div class="container">
-			<h5>Subtypes</h5>
-			<p>There are too many subtypes to count. A lot of these come from the many assorted creature types there are, though there are subtypes for every other card type as well. These primarily affect specific interactions such as buffing only a specific type of creature (e.g. “Zombies you control get +1/+1”).</p>
+		<div class="row">
+			<div class="col-5">
+				<div class="container">
+					<h3>Info</h3>
+					<p>While these could be their own things, I decided to group them together since they only serve the purpose of providing info that doesn’t have an impact during the game.</p>
+				</div>
+				<div class="container">
+					<h5>Name</h5>
+					<p>The name may seem fairly straightforward, but it is actually one of the more important pieces of info. Cards come from different sets and have different prints (see “Collector Info”). However, each name is unique in the sense that every version of a card named “Sol Ring” will always have the same function. No matter when it was printed or what set, print, showcase, etc. it is, the name separates unique cards.</p>
+					<p>This is primarily important in deck building. Depending on the format you’re playing, decks are built using different rules. Standard, the most common format, has a rule that you can only have up to 4 copies of a card in each deck (ignoring basic lands). Duplicates (copies) are determined by the name. This means that even if you have 5 different printings of a card named “Sol Ring”, you can only put 4 of them into the deck.</p>
+				</div>
+				<div class="container">
+					<h5>Color & Color Identity</h5>
+					<p>Each card has a color, sometimes known as its “color identity”. This is simply the combination of colors used (typically in the mana cost). There are a few occasions where a color is used in an ability’s cost but not in the card’s mana cost. In this case, those colors still apply to the card’s color identity.</p>
+					<p>Color and color identity has very limited application outside of certain formats. Commander, the most popular casual format, has a rule in its deck building that you can only use cards that have the same color identity as your commander (a specifically chosen creature). This does mean that if your commander’s identity is Blue-Green, you can still use cards that only have blue or are only green.</p>
+					<p>It only shows up in a handful of cases, but it is worth noting that lands have a color identity in reference to deck building, but get treated as colorless for every effect during the game.</p>
+				</div>
+				<div class="container">
+					<h5>Rarity</h5>
+					<p>Rarity is a pretty simple concept. Some cards are more common than others. In a general sense, the less common a card is, the more powerful it generally is.</p>
+					<p>The rarities are:</p>
+					<ul>
+						<li>Common</li>
+						<li>Uncommon</li>
+						<li>Rare</li>
+						<li>Mythic</li>
+					</ul>
+					<p>Depending on who you talk to, some people might put basic lands in their own rarity below commons. Basic lands are “tossed around” and “traded” a lot more casually than any other card, sometimes even being given for free. There are also a couple of weird, obscure rarities that have only shown up in their unique thing, but you won’t need to worry about any of those.</p>
+				</div>
+				<div class="container">
+					<h5>Flavor Text</h5>
+					<p>Some cards have some extra text at the bottom of the text area. This is known as “Flavor Text”. It’s basically just extra fluff that doesn’t impact the game at all and is there purely to add some “flavor”. They usually reference something in the MTG lore.</p>
+					<p>You can safely ignore flavor text if you want to.</p>
+				</div>
+				<div class="container">
+					<h5>Art & Artist</h5>
+					<p>Every card has some art. Typically this is the picture at the top of the card, though there are some special versions that have “extended art” or are “full art”. Similar to flavor text, the art is there to add flavor and ambiance to the card. Thus, it can generally be ignored if you want.</p>
+					<p>Somewhere on the card, usually the bottom with the collector info, you’ll find a name next to a feather-looking icon. That is the artist that created the art for that card. You should always give credit where it is due. They do an amazing job.</p>
+				</div>
+				<div class="container">
+					<h5>Collector Info</h5>
+					<p>This is all of the extra bits of information at the bottom of the card. You’ll find a 3-4 letter code indicating which set that printing came from along with some numbers (or only one number for older cards). The numbers are 3 digits representing which card number it is.</p>
+					<p>Each set comes with a certain number of cards (by name and print). This total number is indicated by the second number (like a fraction). The first number simply indicates which spot that print takes in the set.</p>
+					<p>All this information is really only important for collectors and when buying/selling cards.</p>
+				</div>
+			</div>
+			<div class="col-5">
+				<h3>Mana Cost</h3>
+				<p>In the upper-right corner of the card you’ll find a set of symbols and sometimes a number in a gray circle. This is the mana cost. In other words, that is how much mana and what colors of mana you need to spend to cast that card. The extra number in the gray circle is considered “colorless” mana and any color can be used in its place. Though, you still need to pay the amount of mana indicated by the number.</p>
+				<p>“CMC” or Converted Mana Cost is a really simple concept. CMC just takes all the mana needed to cast a card, and counts it, ignoring the color. So, for example, a card that costs a Red mana, a Blue mana, and 2 colorless mana has a CMC of 4.</p>
+			</div>
+			<div class="col-5">
+				<div class="container">
+					<h3>Card Type</h3>
+					<p>Each card has a type that tells you how it is meant to be played. There are a handful of different categories that types fit into depending on how they affect the game. These are known as “Types”, “Supertypes” and “Subtypes”.</p>
+					<p>There are 8 main types:</p>
+					<ul>
+						<li>Land</li>
+						<li>Creature</li>
+						<li>Instant</li>
+						<li>Sorcery</li>
+						<li>Enchantment</li>
+						<li>Artifact</li>
+						<li>Battle</li>
+						<li>Planeswalker</li>
+					</ul>
+				</div>
+				<div class="container">
+					<h5>Supertypes</h5>
+					<p>There are only 5 official supertypes:</p>
+					<ul>
+						<li>Basic</li>
+						<li>Legendary</li>
+						<li>Ongoing</li>
+						<li>Snow</li>
+						<li>World</li>
+					</ul>
+					<p>While each has its own specific rulings, supertypes don’t typically have a huge impact on the game.</p>
+				</div>
+				<div class="container">
+					<h5>Subtypes</h5>
+					<p>There are too many subtypes to count. A lot of these come from the many assorted creature types there are, though there are subtypes for every other card type as well. These primarily affect specific interactions such as buffing only a specific type of creature (e.g. “Zombies you control get +1/+1”).</p>
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="container">
+					<h3>Text</h3>
+					<p>This is the main bulk of the card. The part that tells you what the card does. You’ll find this on the bottom half of the card beneath the art and type line. As a general rule, if the card says it, that’s the way it is, even if it counters a rule that usually would have affect. For example, on your draw step at the beginning of each of your turns, you draw 1 card. However, there are several cards that tell you to draw an additional card on each of your draw steps.</p>
+					<p>The most common example of changing the default rules and interactions is what is known as “Keywords”. There are A LOT of keywords. This is why there are plenty of resources online such as our dictionary that explain different keywords (ours includes several other common words and phrases) and help people understand the intricacies of each one. Here are just a few of the most common keywords:</p>
+					<ul>
+						<li>Flying</li>
+						<li>First Strike</li>
+						<li>Trample</li>
+						<li>Deathtouch</li>
+						<li>Vigilance</li>
+						<li>Flash</li>
+						<li>Double Strike</li>
+						<li>Defender</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="container">
+					<h3>Power/Toughness (Creatures</h3>
+					<p>Creatures have an extra piece of information in the bottom-right corner. This is known as their “Power & Toughness”. With these numbers, the most important thing to know is that the power always comes first with the toughness coming after the slash. This applies to everywhere you find two numbers separated by a slash. Most commonly, you’ll see cards that give a creature a “+1/+1 counter” which increases both the power and the toughness by 1.</p>
+					<p>The numbers displayed on the card are considered to be the creature’s “base” power/toughness. The base power/toughness can then be modified by using other cards such as enchantments, equipment, or even other creatures.</p>
+					<p>There are only a few exceptions to this such as showcase creatures from the Amonkhet set which have the power (top) stacked on top of the toughness (bottom).</p>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="col-5">
-		<div class="container">
-			<h3>Text</h3>
-			<p>This is the main bulk of the card. The part that tells you what the card does. You’ll find this on the bottom half of the card beneath the art and type line. As a general rule, if the card says it, that’s the way it is, even if it counters a rule that usually would have affect. For example, on your draw step at the beginning of each of your turns, you draw 1 card. However, there are several cards that tell you to draw an additional card on each of your draw steps.</p>
-			<p>The most common example of changing the default rules and interactions is what is known as “Keywords”. There are A LOT of keywords. This is why there are plenty of resources online such as our dictionary that explain different keywords (ours includes several other common words and phrases) and help people understand the intricacies of each one. Here are just a few of the most common keywords:</p>
-			<ul>
-				<li>Flying</li>
-				<li>First Strike</li>
-				<li>Trample</li>
-				<li>Deathtouch</li>
-				<li>Vigilance</li>
-				<li>Flash</li>
-				<li>Double Strike</li>
-				<li>Defender</li>
-			</ul>
-		</div>
-	</div>
-	<div class="col-5">
-		<div class="container">
-			<h3>Power/Toughness (Creatures</h3>
-			<p>Creatures have an extra piece of information in the bottom-right corner. This is known as their “Power & Toughness”. With these numbers, the most important thing to know is that the power always comes first with the toughness coming after the slash. This applies to everywhere you find two numbers separated by a slash. Most commonly, you’ll see cards that give a creature a “+1/+1 counter” which increases both the power and the toughness by 1.</p>
-			<p>The numbers displayed on the card are considered to be the creature’s “base” power/toughness. The base power/toughness can then be modified by using other cards such as enchantments, equipment, or even other creatures.</p>
-			<p>There are only a few exceptions to this such as showcase creatures from the Amonkhet set which have the power (top) stacked on top of the toughness (bottom).</p>
-		</div>
-	</div>
-</div>
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script><!-- Popper -->

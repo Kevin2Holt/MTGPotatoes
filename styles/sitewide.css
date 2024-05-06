@@ -14,13 +14,16 @@
 * {
 	color:#000;
 }
-
+.wrapper{
+	margin-left:10px;
+}
 nav a:hover {
 	font-weight: bold;
 	text-decoration: none;
 }
-
-
+body{
+	background:rgb(207, 207, 218);
+}
 /* Small >=576px Width*/
 @include media-breakpoint-up(sm) {
 
@@ -70,7 +73,7 @@ nav a:hover {
   }
   
   .sidenav a:hover {
-	color: rgba(255, 0, 0, 0.781); /*edit the color of nav when highlighted*/
+	background:rgb(151, 151, 151);
 	font-weight: bold;
 	text-decoration: none;
   }
