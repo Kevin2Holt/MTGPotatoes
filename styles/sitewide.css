@@ -3,16 +3,14 @@
  * 
  * This is to keep file sizes smaller and help with organization.
 
-
-
- * We are using mobile-first design. This means it needs to work first on a small screen (by width), then extra css is applied as the viewport width crosses certain points.
-
  * We are utilizing Bootstrap (CSS & JS) and Popper
  */
 
-/* Extra Small <576px Width*/
 * {
-	color:#000;
+	color: #000;
+}
+html {
+	height: 100%;
 }
 .wrapper{
 	margin-left:10px;
@@ -23,112 +21,99 @@ nav a:hover {
 }
 body{
 	background:rgb(207, 207, 218);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.mtgp_content {
+	flex: 1 0 auto;
 }
 
 /*Formatting for emails in the footer*/
 #contact .email {
-	font-family: 'Times New Roman', Times, serif;
-	color:black;
-	text-decoration: none;
+/*	font-family: 'Times New Roman', Times, serif;*/
+	color: #ddd;
+	text-decoration: underline;
 }
 
 #contact .email:hover {
-	font-family: 'Times New Roman', Times, serif;
+/*	font-family: 'Times New Roman', Times, serif;*/
 	font-weight: bold;
 }
 
 /*footer formatting*/
 footer {
+	background-color: #212529;
+
 	padding: 10px;
-	position: fixed;
 	bottom: 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	text-align: center;
 }
 
-/* Small >=576px Width*/
-@include media-breakpoint-up(sm) {
-
-}
-
-/* Medium >=768px Width*/
-@include media-breakpoint-up(md) {
-	
-}
-
-/* Large >=992px Width*/
-@include media-breakpoint-up(lg) {
-
-}
-
-/* X-Large >=1200 Width*/
-@include media-breakpoint-up(xl) {
-
-}
-
-/* XX-Large >=1400px Width*/
-@include media-breakpoint-up(xxl){
-
+footer * {
+	color: #ddd !important;
 }
 
 /*styles the side navigation bar*/
-.sidenav {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: rgb(49, 49, 49);
-	overflow-x: hidden;
-	transition: 0.5s;
-	padding-top: 60px;
-  }
-  
-  .sidenav a {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 25px;
-	color: white;
-	display: block;
-	transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-	background:rgb(151, 151, 151);
-	font-weight: bold;
-	text-decoration: none;
-  }
-  
-  .sidenav .closebtn {
-  	color: #fff;
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
-  }
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgb(49, 49, 49);
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	  }
+	  
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: white;
+		display: block;
+		transition: 0.3s;
+	}
 
-  .sidenav .closebtn:hover{
-	cursor: pointer;
-  }
-  
-  .openNav{
-  	color: #fff;
-	font-size:20px;
-	cursor:pointer; 
-	margin-left:20px;
-	padding-top: 12px;
-	padding-right:10px
-	
-  }
-  @media screen and (max-height: 450px) {
-	.sidenav {padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
-  }
+	.sidenav a:hover {
+		background:rgb(151, 151, 151);
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.sidenav .closebtn {
+		color: #fff;
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+
+	.sidenav .closebtn:hover{
+		cursor: pointer;
+	}
+
+	.openNav{
+	  	color: #fff;
+		font-size:20px;
+		cursor:pointer; 
+		margin-left:20px;
+		padding-top: 12px;
+		padding-right:10px
+		
+	  }
+	@media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 18px;}
+	}
 
 	.mtgp_decklistImg {
 		width: 10em;
