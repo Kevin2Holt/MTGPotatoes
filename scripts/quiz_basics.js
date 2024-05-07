@@ -4,7 +4,7 @@ const questions = [
     // 5 Turn Questions
 
     {
-        question: "What is something you should do on the first phase of a turn?",
+        question: "What is the first thing you should do at the beginning of your turn?",
         //Add a category to the question so we know what the user needs to improve on.
         category: "turnOverview",
         answers: [
@@ -15,7 +15,7 @@ const questions = [
         ]
     },
     {
-        question: "What is something you should do on the last phase of a turn?",
+        question: "What is the last step of each turn?",
         category: "turnOverview",
         answers: [
             {answer: "Untap", correct: false},
@@ -25,7 +25,7 @@ const questions = [
         ]
     },
     {
-        question: "How many phases are there in a standard turn?",
+        question: "How many phases are there in a turn?",
         category: "turnOverview",
         answers: [
             {answer: "4", correct: true},
@@ -35,7 +35,7 @@ const questions = [
         ]
     },
     {
-        question: "In what turn phase may players cast instants or activate abilities?",
+        question: "In which phase can you case sorceries or creatures?",
         category: "turnOverview",
         answers: [
             {answer: "Untap", correct: false},
@@ -45,20 +45,20 @@ const questions = [
         ]
     },
     {
-        question: "The process of removing effects from the game is called what?",
+        question: "Creatures with \"First Strike\" and/or \"Double Strike\" ____.",
         category: "turnOverview",
         answers: [
-            {answer: "Dispensing", correct: false},
-            {answer: "Removal", correct: false},
-            {answer: "Resolving", correct: false},
-            {answer: "Cleanup", correct: true},
+            {answer: "Deal extra damage based on the number of creatures you control", correct: false},
+            {answer: "have the chance to critically hit the defending creature", correct: false},
+            {answer: "Deal damage first, before most creatures", correct: true},
+            {answer: "Always kill the defending creature", correct: false},
         ]
     },
 
     // 5 Deck Questions
 
     {
-        question: "In the Constructed deck format, what is the minimum deck size?",
+        question: "In the Standard format, what is the minimum deck size?",
         category: "deckOverview",
         answers: [
             {answer: "90", correct: false},
@@ -68,13 +68,13 @@ const questions = [
         ]
     },
     {
-        question: "In a Commander formatted game (exlcuding the Commander), how many cards are allowed in the deck?",
+        question: "In a Commander formatted game, how many cards are allowed in a deck (including the commander)?",
         category: "deckOverview",
         answers: [
             {answer: "100", correct: true},
             {answer: "60", correct: false},
-            {answer: "50", correct: false},
-            {answer: "125", correct: false},
+            {answer: "80", correct: false},
+            {answer: "120", correct: false},
         ]
     },
     {
@@ -98,30 +98,30 @@ const questions = [
         ]
     },
     {
-        question: "In which format do players bring two decks?",
+        question: "Many tournaments and events allow players to have extra cards and sometimes an extra deck. What is this called?",
         category: "deckOverview",
         answers: [
             {answer: "Standard", correct: false},
             {answer: "Sideboard", correct: true},
-            {answer: "Commander", correct: false},
-            {answer: "Modern", correct: false},
+            {answer: "Extra Cards", correct: false},
+            {answer: "Swap-Ins", correct: false},
         ]
     },
 
     // 5 Card Questions
 
     {
-        question: "What is the term describing a card's cost to be played?",
+        question: "The term \"CMC\" stands for ____.",
         category: "cardOverview",
         answers: [
-            {answer: "Mana Cost", correct: true},
-            {answer: "Playing Cost", correct: false},
-            {answer: "HP Cost", correct: false},
-            {answer: "Power Cost", correct: false},
+            {answer: "Creating Magic Cards", correct: false},
+            {answer: "Converted Mana Cost", correct: true},
+            {answer: "Constructed Monster Combat", correct: false},
+            {answer: "Creature Management Cost", correct: false},
         ]
     },
     {
-        question: "What term indicates a creatures offensive strength?",
+        question: "Creatures have two numbers \"##/##\". Which term does the first number mean?",
         category: "cardOverview",
         answers: [
             {answer: "Damage", correct: false},
@@ -131,7 +131,7 @@ const questions = [
         ]
     },
     {
-        question: "What term defines a creatures ability to resist damage?",
+        question: "Creatures have two numbers \"##/##\". Which term does the second number mean?",
         category: "cardOverview",
         answers: [
             {answer: "Toughness", correct: true},
@@ -141,23 +141,23 @@ const questions = [
         ]
     },
     {
-        question: "What ability is commonly associated with creature cards?",
+        question: "What ability is commonly associated with only creature cards?",
         category: "cardOverview",
         answers: [
-            {answer: "Instant healing", correct: false},
-            {answer: "Direct damaging", correct: false},
+            {answer: "Cycling", correct: false},
+            {answer: "Ward", correct: false},
             {answer: "Flying", correct: true},
-            {answer: "Drawing additional cards", correct: false},
+            {answer: "Kicker", correct: false},
         ]
     },
     {
-        question: "What term represents how often a card's scarcity?",
+        question: "Which of these is NOT a card type?",
         category: "cardOverview",
         answers: [
-            {answer: "Power", correct: false},
-            {answer: "Rarity", correct: true},
-            {answer: "Scarcity", correct: false},
-            {answer: "Probability", correct: true},
+            {answer: "Planeswalker", correct: false},
+            {answer: "Clash", correct: true},
+            {answer: "Instant", correct: false},
+            {answer: "Enchantment", correct: true},
         ]
     },
 
@@ -165,7 +165,7 @@ const questions = [
 
     {
         question: "What is a common strategy to maintain a balanced mana base in a deck?",
-        category: "playingOverview",
+        category: "playOverview",
         answers: [
             {answer: "Prioritize non-land cards", correct: false},
             {answer: "Maximize only one type of land", correct: false},
@@ -177,8 +177,8 @@ const questions = [
         question: "What is the best way to improve at playing?",
         category: "playOverview",
         answers: [
-            {answer: "Play by your own rules", correct: false},
-            {answer: "Avoid reading any card descriptions", correct: false},
+            {answer: "Make up interpretations of the rules", correct: false},
+            {answer: "Bring snacks so your opponents like you more", correct: false},
             {answer: "Always play with a similar deck", correct: false},
             {answer: "Learn from more experienced players", correct: true},
         ]
@@ -187,30 +187,30 @@ const questions = [
         question: "What is a common mistake new players tend to make?",
         category: "playOverview",
         answers: [
-            {answer: "Commonly reading card descriptions", correct: false},
-            {answer: "Overcommitting to the board", correct: true},
-            {answer: "Analyzing the opponents strategy", correct: false},
-            {answer: "Understanding the game fundamentals", correct: false},
+            {answer: "Focusing on the cards' flavor text", correct: false},
+            {answer: "Feeling over-confident", correct: false},
+            {answer: "Overanalyzing the opponent's strategy", correct: false},
+            {answer: "Never asking questions", correct: true},
         ]
     },
     {
-        question: "What best defines the strategy for predicting and appropriately responding to opponents?",
-        category: "playOverview",
-        answers: [
-            {answer: "Randomly playing", correct: false},
-            {answer: "Ignoring opponent", correct: false},
-            {answer: "Analyzing opponent", correct: true},
-            {answer: "Focusing on only one's strategy", correct: false},
-        ]
-    },
-    {
-        question: "What concept should be considered heavily when choosing cards?",
+        question: "What concept should be heavily considered when choosing which card(s) to play?",
         category: "playOverview",
         answers: [
             {answer: "Flavors", correct: false},
             {answer: "Synergy", correct: true},
             {answer: "Rarity", correct: false},
             {answer: "Artwork", correct: false},
+        ]
+    },
+    {
+        question: "The \"Library\" refers to ____.",
+        category: "playOverview",
+        answers: [
+            {answer: "The cards in your hand", correct: false},
+            {answer: "The deck of cards you draw from", correct: true},
+            {answer: "The place where your cards are stored for later use after casting", correct: false},
+            {answer: "The cards you've played on the table", correct: false},
         ]
     },
 ];
