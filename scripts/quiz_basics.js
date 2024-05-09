@@ -3,9 +3,13 @@ const questions = [
     
     // 5 Turn Questions
 
+    //Each question is formatted as:
+    //The question to be displayed to the user
+    //The category the quesiton belongs to
+    //A list of the question answers, and which ones are false and which is true
+
     {
         question: "What is the first thing you should do at the beginning of your turn?",
-        //Add a category to the question so we know what the user needs to improve on.
         category: "turnOverview",
         answers: [
             {answer: "Untap", correct: true},
@@ -308,6 +312,8 @@ function selectAnswer(e){
     const cardOverview = questions[currentQuestionNumber].category === "cardOverview";
     //const playOverview = questions[currentQuestionNumber].category === "playOverview";
 
+    //This function calculates the amount of questions the user got correct
+    //As well as the amount of each category they got wrong
     selectedBtn.classList.add("selected");
     if(isCorrect){
         score++;
@@ -328,11 +334,13 @@ function selectAnswer(e){
         /*if(playOverview){
             incorrectPlayOverview ++;
         }*/
-    
     }
+
+    //Function disables the button that was selected by the user
     Array.from(answerButton.children).forEach(button => {
         button.disabled = true;
     });
+
     nextButton.style.display = "block";
 }
 
@@ -355,8 +363,6 @@ function showScore(){
     else{
         questionElement.innerHTML+= "Your almost ready to start a real game. Here's some areas you should brush up on: " 
     }
-    
-    //I NEED THIS PART EDITED SO IT DISPLAYS THE CATEGORY PROPERLY PLZ
 
     //if user got turn overview questions incorrect
     if(incorrectTurnOverview > 0 ){
@@ -397,6 +403,7 @@ nextButton.addEventListener("click", ()=>{
     }
 })
 
+//Starts the quiz JavaScript funtion once the page is displayed to user
 $(document).ready( () => {
 	startQuiz();
 });
