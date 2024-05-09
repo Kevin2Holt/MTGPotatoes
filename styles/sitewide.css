@@ -44,7 +44,7 @@ body{
 /*footer formatting*/
 footer {
 	background-color: #212529;
-
+	margin-top: 40px;
 	padding: 10px;
 	bottom: 0;
 	width: 100%;
