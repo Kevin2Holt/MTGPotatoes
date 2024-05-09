@@ -163,6 +163,7 @@ const questions = [
 
     // 5 Playing Questions
 
+    /* We do not currently have a page that's associated with these questions
     {
         question: "What is a common strategy to maintain a balanced mana base in a deck?",
         category: "playOverview",
@@ -212,7 +213,7 @@ const questions = [
             {answer: "The place where your cards are stored for later use after casting", correct: false},
             {answer: "The cards you've played on the table", correct: false},
         ]
-    },
+    },*/
 ];
 
 /*
@@ -240,7 +241,9 @@ let currentQuestionNumber = 0;
 let score = 0;
 
 //reset how many times the player got the category questions wrong
-let incorrectTurnOverview, incorrectDeckOverview, incorrectCardOverview, incorrectPlayOverview = 0;
+let incorrectTurnOverview, incorrectDeckOverview, incorrectCardOverview = 0;
+
+//let incorrectPlayOverview = 0;
 
 //Executes when the quiz starts
 function startQuiz(){
@@ -254,7 +257,7 @@ function startQuiz(){
     incorrectTurnOverview = 0;
     incorrectDeckOverview = 0;
     incorrectCardOverview = 0;
-    incorrectPlayOverview = 0;
+    //incorrectPlayOverview = 0;
 
     //Sets this button HTML to next, this is necessary because it gets changed later on
     nextButton.innerHTML = "Next";
@@ -303,7 +306,7 @@ function selectAnswer(e){
     const turnOverview = questions[currentQuestionNumber].category === "turnOverview";
     const deckOverview = questions[currentQuestionNumber].category === "deckOverview";
     const cardOverview = questions[currentQuestionNumber].category === "cardOverview";
-    const playOverview = questions[currentQuestionNumber].category === "playOverview";
+    //const playOverview = questions[currentQuestionNumber].category === "playOverview";
 
     selectedBtn.classList.add("selected");
     if(isCorrect){
@@ -322,9 +325,9 @@ function selectAnswer(e){
             incorrectCardOverview ++;
         }
 
-        if(playOverview){
+        /*if(playOverview){
             incorrectPlayOverview ++;
-        }
+        }*/
     
     }
     Array.from(answerButton.children).forEach(button => {
@@ -366,9 +369,9 @@ function showScore(){
     if(incorrectCardOverview > 0 ){
         questionElement.innerHTML += " <a href='./cardOverview.html'> Card Overview </a>";
     }
-    if(incorrectPlayOverview > 0 ){
+    /*if(incorrectPlayOverview > 0 ){
         questionElement.innerHTML += " <a href=''> play Overview </a>";
-    }
+    }*/
 
 
     //Sets the text for the next button to retake quiz
@@ -397,4 +400,6 @@ nextButton.addEventListener("click", ()=>{
 $(document).ready( () => {
 	startQuiz();
 });
+
+
 
