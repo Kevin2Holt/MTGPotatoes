@@ -9,16 +9,22 @@
 * {
 	color: #000;
 }
+
+/*basic styling for website*/
 html {
 	height: 100%;
 }
 .wrapper{
 	margin-left:10px;
 }
+
+/*adds bold to the navigation text when hovered over*/
 nav a:hover {
 	font-weight: bold;
 	text-decoration: none;
 }
+
+/*basic formatting for the body of each page*/
 body{
 	background:rgb(207, 207, 218);
 	display: flex;
@@ -82,12 +88,14 @@ footer * {
 		transition: 0.3s;
 	}
 
+	/*changes navigation color and weight when hovered over*/
 	.sidenav a:hover {
 		background:rgb(151, 151, 151);
 		font-weight: bold;
 		text-decoration: none;
 	}
 
+	/*syling for the navigation close button*/
 	.sidenav .closebtn {
 		color: #fff;
 		position: absolute;
@@ -97,10 +105,12 @@ footer * {
 		margin-left: 50px;
 	}
 
+	/*changes navigation close button cursor when hovered over*/
 	.sidenav .closebtn:hover{
 		cursor: pointer;
 	}
 
+	/*syling when navigation is opened*/
 	.openNav{
 	  	color: #fff;
 		font-size:20px;
@@ -110,11 +120,14 @@ footer * {
 		padding-right:10px
 		
 	  }
+
+	/*adjustments for smaller screen size*/
 	@media screen and (max-height: 450px) {
 		.sidenav {padding-top: 15px;}
 		.sidenav a {font-size: 18px;}
 	}
 
+	/*styling for decks in the deck list and each card element*/
 	.mtgp_decklistImg {
 		width: 10em;
 	}
@@ -126,6 +139,8 @@ footer * {
 		text-align: center;
 		margin: 5pt;
 	}
+
+	/*styling for the listed tags*/
 	.mtgp_tag {
 		font-size: 9pt;
 		display: inline-block;
@@ -135,16 +150,22 @@ footer * {
 		margin-bottom: 0;
 		border-radius: 5pt;
 	}
+
+	/*styling for the cards in each deck list*/
 	.mtgp_decklistCard {
 		position: relative;
 		display: inline-block;
 		overflow: hidden;
 		width: 15em;
 	}
+
+	/*styling for each decklist card's image*/
 	.mtgp_decklistCard_img {
 		width: 100%;
 		display: block;
 	}
+
+	/*adjusts the decklist styling for the overlay class*/
 	.mtgp_decklistCard .overlay {
 		position: absolute;
 		bottom: 0;
@@ -158,6 +179,8 @@ footer * {
 		box-sizing: border-box;
 		opacity: 1;
 	}
+
+	/*adjusts decklist styling for the formatoverlay class*/
 	.mtgp_decklistCard .formatoverlay {
 		position: absolute;
 		top: 0;
@@ -165,6 +188,8 @@ footer * {
 		padding: 1pt 5pt;
 		border-radius: 0 0 5px 0;
 	}
+
+	/*adjusts the decklist formatoverlay styling for individual subclasses*/
 	.mtgp_decklistCard .formatoverlay.standard {
 		background-color: rgb(87,2,140);
 		color: #bbb;
@@ -173,6 +198,8 @@ footer * {
 		background-color: rgb(153,1,1);
 		color: #bbb;
 	}
+
+	/*adjusts decklist image overlay styling*/
 	.mtgp_decklistCard .imgoverlay {
 		opacity: 0;
 		position: absolute;
@@ -183,9 +210,13 @@ footer * {
 		background-color: rgba(0,0,0,0.5);
 		transition: opacity 0.3s ease;
 	}
+
+	/*adjusts decklist image overlay during decklist hover*/
 	.mtgp_decklistCard:hover .imgoverlay {
 		opacity: 1;
 	}
+
+	/*adjusts nagivation styling for navlink, navlink during hover, header 4*/
 	.mtgp_getStart_navLink {
 		color: #000;
 		text-decoration: none;
