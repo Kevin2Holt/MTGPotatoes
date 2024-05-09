@@ -1,4 +1,4 @@
-/*need to make unique*/
+/*styling for the quiz container*/
 .quiz-container{
 	background: #ffffff;
 	width: 90%;
@@ -8,6 +8,7 @@
 	border-radius:10px;
 	padding: 30px;
   }
+
   /*style the quiz name and adds line to bottom*/
   .quiz-container h2{
 	font-size: 25px;
@@ -20,12 +21,15 @@
   .quiz{
 	padding: 20px 0;
   }
-  /*styles the h3 which says question */
+
+  /*styles the h3 which says question*/
   .quiz h3{
 	font-size: 18px;
 	color: #001e4d;
 	font-weight: 600px
   }
+
+  /*Adjusts styling of each answer button*/
   .answer-btn{
 	background: #ffffff;
 	color: #222;
@@ -39,6 +43,8 @@
 	cursor: pointer;
 	transition: all 0.3s;
   }
+
+  /*adjusts styling while hovering over a particular answer*/
 .answer-btn:hover:not([disabled]){
 	background:#4f4f4f;
 	color:white;
@@ -46,6 +52,7 @@
 	
 }
 
+/*adjusts the styling of the next button*/
 #next-btn{
 	background: #001e4d;
 	color:#fff;
@@ -58,6 +65,8 @@
 	cursor:pointer;
 	display:none;
 }
+
+/*adjust the color of the selected answer*/
 .selected{
 	background:#4f4f4f;
 	color:white;
