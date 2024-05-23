@@ -1,0 +1,94 @@
+This file explains the folder structure and purposes of the files in each folder. This way, there doesn't need to be a large, repetitive comment block at the top of each file describing why it exists.
+
+/root - This is the root directory that holds the entire project and all its files.
+	
+
+	/controllers - Controllers are used to further separate out logic on the server-side. This is where you'll generally find any logic directly related to the content on the page such as database requests.
+		
+		deckController.js
+			*Handles the logic of the HTTP requests for the ".com/decks" part of the website.
+		quizController.js
+			*Handles the logic of the HTTP requests for the ".com/quiz" part of the website.
+		starterGuideController.js
+			*Handles the logic of the HTTP requests for the ".com/getting-started" part of the website.
+
+	
+	/node_modules - The files & libraries used by Node.js and its installed modules.
+		*npm manages this, I don't touch it
+
+	
+	/public - This folder holds all of the static files like images, .css files, and .js scripts.
+		
+		/database - This folder is a placeholder for a database that would store all of the data. The substitute is used since we don't currently have access to a full database.
+			
+			deckList.json
+				*Holds the place of a database table(s) that stores information about the different decks.
+			dictionary.json
+				*Holds the place of a database table(s) that stores reference information.
+			quizList.json
+				*Holds the place of a database table(s) that stores assorted quizes, their respective questions with their respective answers.
+				*Currently the website is only set up to work with a single quiz (in the first position of the array) with any number of questions (at least one), each having only 4 choices and a single correct answer.
+		
+		script.js
+			*Basically only used on the .com/quiz page to manage the quiz logic.
+		styles.css
+			*All of the CSS styling for the entire site. It only needs to be a single file since it's not very big at the moment. After further expansion, this will likely get separated into different files for each section of the website.
+	
+	
+	/routers - Routers are files that help separate out the routing logic (especialy useful for more complex websites). I generally use one for each section of the website (i.e. anytime you add an extra / to the url like ".com/decks/<anything else>"). These reference the controllers (in the "root/controllers" folder).
+		
+		deckRouter.js
+			*Handles the routing for the ".com/decks" part of the website.
+		quizRouter.js
+			*Handles the routing for the ".com/quiz" part of the website.
+		starterGuideRouter.js
+			*Handles the routing for the ".com/getting-started" part of the website.
+	
+	
+	/views - This folder holds all of the "HTML" (.ejs) for all of the pages on the site. This is the stuff people actually see.
+		
+		
+		/partials - This folder holds parts of each page that are consistent across multiple pages (currently the entire site). This is to eliminate needless repetitive coding and also makes changing each part easy since you only need to edit a single file instead of all of them.
+			
+			foot.ejs
+				*This file will hold the stuff at the bottom of the page like any legal stuff and very basic navigation (not styled).
+			head.ejs
+				*This holds mainly the <head> section of the HTML which is almost always the same across each page.
+			header.ejs
+				*This holds anything that is consistently at the top of each page. Currently this is only the nav bar.
+		
+		404.ejs
+			*This page is used if a url paths to a website that isn't programed in.
+		boardZones.ejs
+			*Part of the "Getting Started" guide; Describes the different zones in the game.
+		cardOverview.ejs
+			*Part of the "Getting Started" guide; Describes the different parts of a card.
+		cardTypes.ejs
+			*Part of the "Getting Started" guide; Describes the different types of cards and how they work and interact.
+		deck.ejs
+			*This is a variable (template) page that changes depending on which deck is referenced in the url using ".com/decks/<DECK ID>", replacing <DECK ID> with a number.
+			*Each page lists the information about each deck and displays the cards needed to build it.
+		deckList.ejs
+			*This is a responsive page that automatically adds/removes decks (and the associated link/picture card) as they added/removed from the database (currently "deckList.json")
+		dictionary.ejs
+			*This is a responsive page that reads the content in the database (currently "dictionary.json") and displays the info in a table format to be used for reference.
+		gettingStarted.ejs
+			*Part of the "Getting Started" guide; This page acts as a hub for the guide, profiding links to all of the pages in the guide.
+		index.ejs
+			*The home page. Provides basic info and encourages users to browse the website.
+		quiz.ejs
+			*A responsive page that uses data in the database (currently "quizList.json") to display a quiz, one question at a time, and providing feedback with each question.
+		turnOverview.ejs
+			*Part of the "Getting Started" guide; Describes the different phases and steps in a turn.
+	
+
+	.gitignore
+		*Tells git/GitHub to ignore the /node_modules folder since it only has common files that are easily accesible by everyone using npm. This is done to reduce the total size of the project files and reduce the upload/download time as much as possible. In the command line (cmd), use the command 'npm install' to automatically install all needed dependencies.
+	app.js
+		*The main file of the web server. This guides all of the web traffic to the pages they need to get.
+	package.json
+		*Basic information about the project (used with Node.js & npm). Includes the Node.js module dependencies.
+	package-lock.json
+		*More in-depth info about the project.
+	INFO.txt
+		*That's this file. Just read the description at the beginning of this file.

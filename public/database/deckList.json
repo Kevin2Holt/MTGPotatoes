@@ -1,0 +1,372 @@
+[
+	{
+		"id": 0,
+		"title": "Life for Life: Inexpensive Angles",
+		"description": "Angels take center stage in Inexpensive Angels, a budget deck perfect for Magic: The Gathering players who prefer overwhelming foes with the sheer force of their health. Key components to this deck are effects from its central angelic figures: each new Angel gets +1/1 per each existing Angel (Giada), plays a Land, or casts a Mana 3 or lower permanent from the grave that adds 2 Life when it’s sent to the grave (Serra Paragon), and returning a destroyed non-token creature to the player’s hand in the next end step (Liesa).\nThe latter’s bonus of enemy creatures being exiled upon death makes Liesa a particularly dangerous card to possess. However, on top of predictable Life gains (Lunarch Veteran, Inspiring Overseer), the deck’s other spells can also exile (Borrowed Time), and destroy (Go for the Throat, Sheoldred’s Edict, Stroke of Midnight, Touch the Spirit Realm) cards.",
+		"format": "standard",
+		"tags": [
+			"angel",
+			"white",
+			"black"
+		],
+		"decklist": [
+			[10, "Plains"],
+			[9, "Swamp"],
+			[4, "Scoured Barrens"],
+			[4, "Inspiring Overseer"],
+			[3, "Spirited Companion"],
+			[3, "Lunarch Veteran"],
+			[3, "Ambitious Farmhand"],
+			[3, "Giada, Font of Hope"],
+			[2, "Phyrexian Missionary"],
+			[1, "Serra Paragon"],
+			[1, "Liesa, Forgotten Archangel"],
+			[4, "Go for the Throat"],
+			[1, "Sheoldred's Edict"],
+			[1, "Stroke of Midnight"],
+			[3, "Render inert"],
+			[2, "Touch the Spirit Realm"],
+			[1, "Borrowed Time"],
+			[4, "Invasion of Dominaria"],
+			[1, "Invasion of New Capenna"]
+		]
+	},
+	{
+		"id": 1,
+		"title": "Draw the Power: Izzet Phoenix",
+		"description": "Izzet Phoenix serves as a handy Red-Blue deck, especially for players who want a handy draw deck. In principle, this deck aims to send Arclight Phoenix to the graveyard, only to bring it back after casting three spells.\nMoreover, this deck utilizes cards that deal damage and create tokens whenever players draw their second card. This strategy becomes handy, especially when much of the other cards in the deck rely on threats, removal spells, and other draw spells.",
+		"format": "standard",
+		"tags": [
+			"blue",
+			"red",
+			"draw"
+		],
+		"decklist": [
+			[8, "Island"],
+			[8, "Mountain"],
+			[4, "Steam Vents"],
+			[2, "Swiftwater Cliffs"],
+			[4, "Arclight Phoenix"],
+			[4, "Crackling Drake"],
+			[3, "Goblin Electromancer"],
+			[2, "Irencrag Pyromancer"],
+			[2, "Sprite Dragon"],
+			[2, "Blitz of the Thunder-Raptor"],
+			[2, "Mystical Dispute"],
+			[4, "Opt"],
+			[4, "Radical Idea"],
+			[4, "Shock"],
+			[4, "Thrill of Possibility"],
+			[3, "Improbable Alliance"]
+		]
+	},
+	{
+		"id": 2,
+		"title": "Power Up: Red Deck Redemption",
+		"description": "Players looking into an aggressive Red deck for their card game experience don’t necessarily have to rely on overwhelming enemies with numbers. This Red Deck Redemption deck is a decent starter deck to encourage players to experiment with various damage conditions, with cards capable of dealing 5 Damage (Witchstalker Frenzy), 3 Damage (Lightning Strike, Strangle), and 1 Damage (End the Festivities).\nOther cards also have extra conditions, such as dealing 5 Damage but only against White/Blue creatures (Lithomantic Barrage), 2 Damage with Scry (Play with Fire), and 4 Damage to an opponent as well as 1 Damage to a creature (Invasion of Regatha). Other Red cards in the deck can get +1/1 per Non-Creature spell cast (Monastery Swiftspear), grant +3/1 (Monstrous Rage), and even disable Life-gaining effects (Giant Cindermaw).",
+		"format": "standard",
+		"tags": [
+			"red",
+			"aggressive"
+		],
+		"decklist": [
+			[19, "Mountain"],
+			[1, "Sokenzan, Crucible of Defiance"],
+			[4, "Monastery Swiftspear"],
+			[4, "Phoenix Chick"],
+			[4, "Reinforced Ronin"],
+			[4, "Feldon Ronom Excavator"],
+			[4, "Witchstalker Frenzy"],
+			[3, "Goddric, Cloaked Reveler"],
+			[2, "Giant Cindermaw"],
+			[2, "Squee, Dubious Monarch"],
+			[4, "Lightning Strike"],
+			[4, "Monstrous Rage"],
+			[4, "Play With Fire"],
+			[4, "Lithomantic Barrage"],
+			[2, "End the Festivities"],
+			[2, "Strangle"],
+			[4, "Kumano Faces Kakkazan"],
+			[4, "Invasion of Regatha"]
+		]
+	},
+	{
+		"id": 3,
+		"title": "Sacrifice is Necessary: Multi White-Black",
+		"description": "Interestingly, great MTG strategies don't just rely on dealing the most damage to opponents. Sometimes, the best strategies involve sacrificing one's own deck to eliminate the enemy. Players can get introduced to this unique concept in this Multi White-Black deck. With this deck, players take advantage of Lifelink, as well as cards with alternate forms. Moreover, this deck capitalizes on summoning and sacrificing creatures in order to deal damage.\nWith this deck, players rely on certain cards to constantly summon new creatures. These cards compliment certain creatures that punish opponents when a player creature dies. Finally, players can maximize these benefits with cards that actively force them to sacrifice creatures.",
+		"format": "standard",
+		"tags": [
+			"white",
+			"black",
+			"sacrifice"
+		],
+		"decklist": [
+			[4, "Orzhov Basilica"],
+			[8, "Plains"],
+			[8, "Swamp"],
+			[4, "Tainted Field"],
+			[4, "Cartel Aristocrat"],
+			[4, "Cruel Celebrant"],
+			[2, "Disciple of Griselbrand"],
+			[4, "Doomed Traveler"],
+			[2, "Maw of the Obzedat"],
+			[3, "Pious Evangel"],
+			[2, "Plaguecrafter"],
+			[3, "Vizkopa Guildmage"],
+			[3, "Wall of Limbs"],
+			[3, "Midnight Haunting"],
+			[2, "Flesh Allergy"],
+			[2, "Spirit Bonds"],
+			[2, "Vampiric Rites"]
+		]
+	},
+	{
+		"id": 4,
+		"title": "Infect to Win: Multi Green-Black",
+		"description": "The fun starts in MTG deck-building when players start fiddling with color combinations. However, players who do so tend to use colorless lands in order to maximize the spells they cast. With this Multi Green-Black deck, players can get to know new concepts such as legendaries, equipment, and counters. Moreover, they'll get exposed to new effects such as Lifelink and Regenerate.\nPerhaps more interesting is how this deck introduces versatile styles of play to gamers. Most times, players can use this deck to rely on Infect to win. After all, players lose if they acquire 10 or more poison counters. However, players may also use Infect to ruin the combat strategy of their enemy creatures.",
+		"format": "standard",
+		"tags": [
+			"green",
+			"black",
+			"infect",
+			"legendary",
+			"equipment",
+			"counters"
+		],
+		"decklist": [
+			[6, "Forest"],
+			[4, "Golgari Rot Farm"],
+			[4, "Grasping Dunes"],
+			[4, "Jungle Hollow"],
+			[6, "Swamp"],
+			[2, "Channeler Initiate"],
+			[2, "Doomgape"],
+			[4, "Elves of Deep Shadow"],
+			[2, "Flesh-Eater Imp"],
+			[2, "Hapatra, Vizier of Poisons"],
+			[4, "Lotleth Troll"],
+			[3, "Phyrexian Vatmother"],
+			[4, "Vector Asp"],
+			[3, "Putrefy"],
+			[2, "Fireshrieker"],
+			[2, "Loxodon Warhammer"],
+			[2, "Epic Confrontation"],
+			[2, "Nest of Scarabs"],
+			[2, "Phyresis"]
+		]
+	},
+	{
+		"id": 5,
+		"title": "Control Rules: Mono-Blue",
+		"description": "Players who had fun with a Mono-Black control deck will have a ton more spellcasting versatility with a Mono-Blue deck. After all, Blue cards are, by nature, control cards - and they provide new options to navigate the battlefield, especially for newbies.\nFor instance, this Mono-Blue deck introduces an alternate win condition in the form of Hedron Alignment. Thanks to Hedron Alignment, players can now win in their upkeep stage just by having this card on the battlefield, in the grave, in exile, and in their hand.\nHowever, players of this deck will also get to use advanced lands, bouncing, scrying, artifacts, and even counterspells. Thanks to counterspells, players can now eliminate pesky cards in the stack. Unfortunately, they have to be careful when to use these counterspells - as vets may lead them into a trap.",
+		"format": "standard",
+		"tags": [
+			"blue",
+			"control",
+			"counterspell"
+		],
+		"decklist": [
+			[20, "Island"],
+			[4, "Lonely Sandbar"],
+			[4, "Curator of Mysteries"],
+			[4, "Phantasmal Bear"],
+			[4, "Sea Gate Oracle"],
+			[4, "Anticipate"],
+			[2, "Dissipate"],
+			[2, "Engulf the Shore"],
+			[4, "Essence Scatter"],
+			[2, "Syncopate"],
+			[2, "Jalum Tome"],
+			[4, "Treasure Cruise"]
+		]
+	},
+	{
+		"id": 6,
+		"title": "Interact With the Shadows: Mono-Black",
+		"description": "Unlike other card games, MTG offers enough versatility with playstyles thanks to its color themes. Players of Black-based builds understand this, as Black cards often ensure even the graveyard is put to use throughout the match. These concepts are present in this simple-to-use Mono-Black deck. With this build, players get introduced to the idea of controlling the battlefield with their cards and leeching life off opponents.\nAnd unfortunately to their enemies, players can also experiment with how they want this control to happen. This deck introduces new concepts such as Deathtouch, Wrath, discards, and graveyard interaction. For instance, creatures with Deathtouch still give excess damage when blocking creatures with Trample, which can be annoying to more offensive decks.",
+		"format": "standard",
+		"tags": [
+			"black",
+			"graveyard",
+			"life-leech"
+		],
+		"decklist": [
+			[24, "Swamp"],
+			[4, "Blood Pet"],
+			[3, "Crow of Dark Tidings"],
+			[1, "Lord of the Pit"],
+			[4, "Reassembling Skeleton"],
+			[3, "Revenant"],
+			[2, "Royal Assassin"],
+			[4, "Typhoid Rats"],
+			[4, "Doom Blade"],
+			[3, "Corpse Churn"],
+			[4, "Distress"],
+			[2, "Drown in Sorrow"],
+			[2, "Ever After"]
+		]
+	},
+	{
+		"id": 7,
+		"title": "Buff Galore: Mono-White",
+		"description": "Players who want to try out deck-building might be confused with some slang MTG vets use throughout their deck-construction process. And unlike the defensive Green and aggressive Red cards, White cards tend to lean toward support. Thanks to effects such as Anthem, a nickname granted to cards that buff player creatures, players can add a ton of versatility to their battle strategy.\nGamers can now try powering up their creatures using card effects. This Mono-White deck introduces exiles, creature auras, and choosing when to benefit from certain combos. For instance, two Perimeter Captains defending the player can grant their owners +8 life. However, four creatures defending the player might grant their player +32 life. This deck also introduces new concepts such as auras and tokens, as well as Protection and Defender.",
+		"format": "standard",
+		"tags": [
+			"white",
+			"exile",
+			"auras",
+			"buffs",
+			"tokens"
+		],
+		"decklist": [
+			[24, "Plains"],
+			[2, "Crusader of Odric"],
+			[4, "Fencing Ace"],
+			[1, "Knight-Captain of Eos"],
+			[2, "Mentor of the Meek"],
+			[4, "Valiant Guard"],
+			[4, "Veteran Armorsmith"],
+			[4, "Veteran Swordsmith"],
+			[4, "Raise the Alarm"],
+			[2, "Angelic Gift"],
+			[2, "Glorious Anthem"],
+			[2, "Oblivion Ring"],
+			[3, "Pacifism"],
+			[2, "Pentarch Ward"]
+		]
+	},
+	{
+		"id": 8,
+		"title": "Master the Stack: Mono-Green",
+		"description": "The stack remains one of the most important aspects of MTG. Unfortunately, it's also one of the most confusing. Sometimes, players might just scratch their heads when five or six spells end up countering each other in the stack. To top it all off, managing creatures outside the stack can make the game extremely overwhelming.\nThis Mono-Green deck aims to help newbies understand how the stack works. Thanks to straightforward card effects, players can focus on survivability while improving their creatures. Additionally, this deck introduces card effects such as Hexproof, Reach, and Trample. It also makes use of cantrips and card draws, as well as enchantments.",
+		"format": "standard",
+		"tags": [
+			"green",
+			"stack"
+		],
+		"decklist": [
+			[24, "Forest"],
+			[3, "Archweaver"],
+			[2, "Drove of Elves"],
+			[4, "Elvish Mystic"],
+			[4, "Elvish Visionary"],
+			[1, "Force of Nature"],
+			[2, "Garruk's Packleader"],
+			[4, "Kalonian Tusker"],
+			[2, "Wood Elves"],
+			[3, "Giant Growth"],
+			[4, "Explore"],
+			[3, "Prey Upon"],
+			[4, "Wild Growth"]
+		]
+	},
+	{
+		"id": 9,
+		"title": "Get Aggressive: Mono-Red",
+		"description": "Players who want to turn up the heat in battle would want to build a Red-focused deck. Thanks to its aggressive nature, Red-based builds like this Mono-Red deck tend to overwhelm enemies with sheer numbers or sheer power, unleashing devastating combos that end battles quickly. This Mono-Red deck from WItC follows this archetype, albeit built for newbies.\nWith this Mono-Red deck, players will focus on dealing more damage to the enemy player instead of creatures. However, this deck also slowly introduces card combos and trains players in terms of their timing. This deck introduces players to the idea of exiling cards, as well as Haste, Flying, First Strike, and Double Strike.",
+		"format": "standard",
+		"tags": [
+			"red",
+			"aggressive",
+			"exile"
+		],
+		"decklist": [
+			[21, "Mountain"],
+			[3, "Goblin Arsonist"],
+			[3, "Impetuous Sunchaser"],
+			[1, "Jeska, Warrior Adept"],
+			[4, "Kiln Fiend"],
+			[3, "Spark Elemental"],
+			[4, "Collateral Damage"],
+			[4, "Lightning Strike"],
+			[4, "Rush of Adrenaline"],
+			[4, "Assault Strobe"],
+			[4, "Disintegrate"],
+			[3, "Flame Slash"],
+			[2, "Traitorous Blood"]
+		]
+	},
+	{
+		"id": 10,
+		"title": "Aggression and Safety: Rakdos Party",
+		"description": "Beginners can easily recognize that a combat rotation can often leave them vulnerable - or risk performing little to ensure they have defenders on the field. With this deck, players get an exit from this tricky situation. At its core, Rakdos Party utilizes the Zendikar Rising’s “party” mechanic to make synergies and aggression much easier to accomplish. Zagras, Thief of Heartbeats, and Call of the Death-Dweller can easily have players get aggressive and still get cards back to the field.\nIts plain aggression mechanic is also impressive. Players get access to creatures that build power (Grotag Bug-Catcher), power gain through life gain (Archfiend’s Vessel), death-based damage (Fireblade Charger, Heartfire Immolator), lifesteal via party presence (Malakir Blood-Priest), and party-based mana build (Ardent Electromancer).",
+		"format": "standard",
+		"tags": [
+			"red",
+			"black",
+			"party"
+		],
+		"decklist": [
+			[9, "Mountain"],
+			[8, "Swamp"],
+			[4, "Bloodfell Caves"],
+			[4, "Fireblade Charger"],
+			[4, "Archfiend's Vessel"],
+			[4, "Grotag Bug-Catcher"],
+			[4, "Heartfire Immolator"],
+			[4, "Malakir Blood-Priest"],
+			[4, "Zagras, Thief of Heartbeats"],
+			[3, "Ardent Electromancer"],
+			[2, "Malakir Rebirth"],
+			[2, "Spikefield Hazard"],
+			[2, "Heartless Act"],
+			[4, "Call of the Death-Dweller"],
+			[2, "Bloodchief's Thirst"]
+		]
+	},
+	{
+		"id": 11,
+		"title": "Artifact Domination: Phyrexian Assimilation",
+		"description": "The horrific expansion of New Phyrexia across the Multiverse can be seen firsthand with Phyrexian Assimilation, an Artifact-themed deck that takes full advantage of Artifact Creatures and buffs in the acclaimed card game. Key to this deck are effects triggered when Artifacts enter the field under the player’s control such as +1/1 (Mandible Justicar, Patchwork Automaton), +1/1 with Vigilance (Veil of Assimilation), and even getting +1/1 per Artifact and Enchantment controlled (Michiko’s Reign of Truth).\nWorking in tandem with these buffs is a constant drawback for enemies. This deck achieves this by being Unblockable and getting Hexproof from a color of choice (Skrelv), Unblockable except against Haste (Gingerbrute), and exiling enemy creatures (Ossification, Glass Casket).",
+		"format": "standard",
+		"tags": [
+			"white",
+			"phyrexian",
+			"artifacts"
+		],
+		"decklist": [
+			[13, "Plains"],
+			[3, "The Fair Basilica"],
+			[3, "Roadside Reliquary"],
+			[1, "Eiganjo, Seat of the Empire"],
+			[4, "Skrelv, Defector Mite"],
+			[4, "Swooping Lookout"],
+			[4, "Gingerbrute"],
+			[4, "Mandible Justiciar"],
+			[4, "Patchwork Automaton"],
+			[2, "Syr Ginger, the Meal Ender"],
+			[4, "Basilica Skullbomb"],
+			[4, "Glass Casket"],
+			[4, "Veil of Assimilation"],
+			[4, "Michiko's Reign of Truth"],
+			[2, "Ossification"]
+		]
+	},
+	{
+		"id": 12,
+		"title": "Outpace to Submission: Izzet Spells",
+		"description": "Similar to the aggressive mono-red starter deck, this Izzet Spells deck relies on summoning relatively cheap spells and creatures to build up damage and outpace enemies into submission. Creatures such as Heartfire Immolator, Rimrock Knight, Sprite Dragon, and Kinetic Augur can build damage through their effects.\nMeanwhile, spells such as Spikefield Hazard, Academic Dispute, Crash Through, Opt, and Shock can either enhance creatures with effects or mess around with the enemy. Thanks to the rather accessible nature of most of Izzet Spells cards, players can get a unique take on red-based destruction without relying too much on minions.",
+		"format": "standard",
+		"tags": [
+			"blue",
+			"red",
+			"spellsling"
+		],
+		"decklist": [
+			[9, "Island"],
+			[8, "Mountain"],
+			[3, "Swiftwater Cliffs"],
+			[3, "Monastery Swiftspear"],
+			[4, "Delver of Secrets"],
+			[4, "Electrostatic Infantry"],
+			[4, "Third Path Iconoclast"],
+			[3, "Balmor, Battlemage Captain"],
+			[4, "Consider"],
+			[4, "Play with Fire"],
+			[4, "Fading Hope"],
+			[4, "Shore up"],
+			[4, "Lightning Strike"],
+			[2, "Spell Pierce"]
+		]
+	}
+]

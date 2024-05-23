@@ -1,0 +1,19 @@
+{
+  "name": "MTG Potato",
+  "version": "1.0.0",
+  "description": "MTGPotato.com is a website intended to help players (especially new players) learn how to play Magic: The Gathering. I also intend it to act as a reference guide that players can use when they have questions about assorted rules or words.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Holt",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "jquery": "^3.7.1",
+    "jsonfile": "^6.1.0"
+  }
+}

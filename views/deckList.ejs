@@ -1,0 +1,23 @@
+<!----------------------------------------------
+	PLEASE REFERENCE THE "INFO.txt" FILE
+	FOR INFORMATION ABOUT THE GENERAL PURPOSE
+	OF EACH FILE. THANKS!
+----------------------------------------------->
+
+<!-- Includes the partial "HTML"/ejs from the specified file -->
+<%- include("./partials/head.ejs"); %>
+
+<!-- This loops through every item in the deck list database, adding a new card for each -->
+<% for(i=0; i < deckList.length; i++) { %>
+	<a href="/decks/<%= i %>" class="mtgp_decklistCard text-white">
+		<img class="mtgp_decklistCard_img" src='https://api.scryfall.com/cards/named?exact=<%= deckList[i].decklist[0][1]%>&format=image&version=art_crop' />
+		<div class="imgoverlay"></div>
+		<p class="formatoverlay <%= deckList[i].format %>"><%= deckList[i].format %></p>
+		<div class="overlay text-white">
+			<h5 class="mtgp_decklistCard_title text-white"><%= deckList[i].title %></h5>
+		</div>
+	</a>
+<% } %>
+
+<!-- Includes the partial "HTML"/ejs from the specified file -->
+<%- include("./partials/foot.ejs"); %>

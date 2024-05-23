@@ -1,0 +1,89 @@
+<!----------------------------------------------
+	PLEASE REFERENCE THE "INFO.txt" FILE
+	FOR INFORMATION ABOUT THE GENERAL PURPOSE
+	OF EACH FILE. THANKS!
+----------------------------------------------->
+
+<!-- Includes the partial "HTML"/ejs from the specified file -->
+<%- include("./partials/head.ejs"); %>
+
+<!-- This is where this page's content goes -->
+	
+<div class="row">
+	<div class="col-sm p-4">
+		<h3>Turn Overview</h3>
+		<p>This is some filler text and should be replaced with something that introduces the topic and gets the reader interested in learning more.</p>
+	</div>
+	<div class="col-sm-5 p-4" style="border:1px solid black">
+		<div class="container">
+			<h3>Beginning Phase</h3>
+			<div class="container">
+				<h4>Untap</h4>
+				<p>The first part of every turn. If it’s your turn, untap all permanents you control.</p>
+			</div>
+			<div class="container">
+				<h4>Upkeep</h4>
+				<p>Effects that happen at the beginning of the turn happen here. (Don’t forget it!)</p>
+			</div>
+			<div class="container">
+				<h4>Draw</h4>
+				<p>Draw a card for your turn.</p>
+			</div>
+		</div>
+		<div class="container">
+			<h3>Pre-Combat Main Phase</h3>
+			<ul>
+				<li>Play a Land - You can play up to 1 land on each of your turns if you have one.</li>
+				<li>Play/Cast creatures, sorceries, enchantments, artifacts, planeswalkers, battles, and instants</li>
+			</ul>
+		</div>
+		<div class="container">
+			<h3>Combat Phase</h3>
+			<div class="container">
+				<h4>Beginning of Combat</h4>
+				<p>Combat begins. This step allows spells and effects while no longer in a main phase. (No sorcery speed effects)</p>
+			</div>
+			<div class="container">
+				<h4>Declare Attackers</h4>
+				<p>If it’s your turn, select which creatures you want to attack with. Remember that this taps them which means you can’t block with them later.</p>
+			</div>
+			<div class="container">
+				<h4>Declare Blockers</h4>
+				<p>If you’re the defending player, select your blocks now. (Remember you can group block)</p>
+			</div>
+			<div class="container">
+				<h4>First Strike Damage</h4>
+				<p>First strike and double strike creatures do damage</p>
+			</div>
+			<div class="container">
+				<h4>Damage</h4>
+				<p>Creatures without first strike do their damage now. (This also includes those with double strike)</p>
+			</div>
+			<div class="container">
+				<h4>End of Combat</h4>
+				<p>Combat is over. Some effects are triggered.</p>
+			</div>
+		</div>
+		<div class="container">
+			<h3>Post-Combat Main Phase</h3>
+			<ul>
+				<li>Play a Land - You can play up to 1 land on each of your turns if you have one.</li>
+				<li>Play/Cast creatures, sorceries, enchantments, artifacts, planeswalkers, battles, and instants</li>
+			</ul>
+		</div>
+		<div class="container">
+			<h3>End Phase</h3>
+			<div class="container">
+				<h4>End Step</h4>
+				<p>One last chance to play instant speed spells and effects before the turn ends. Some effects are also triggered here.</p>
+			</div>
+			<div class="container">
+				<h4>Cleanup Step</h4>
+				<p>Many effects last until “end of turn” and they end now. You also remove all damage from creatures and discard down to your maximum hand size. (Usually 7)</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Includes the partial "HTML"/ejs from the specified file -->
+<%- include("./partials/foot.ejs"); %>

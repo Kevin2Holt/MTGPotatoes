@@ -1,0 +1,471 @@
+[
+	{
+		"title": "Basics Quiz",
+		"end_text": "So, are you ready to play your first game?</br></br>Looks like you scored <b id=\"quizScore\"></b>.</br></br>As always, don't be afraid to ask questions and remember the most important non-rule of Magic: Every rule can be overwritten by something a card says.",
+		"questions": [
+			{
+				"question": "What is the first thing you should do at the beginning of your turn?",
+				"answers": [
+					{
+						"text": "Untap",
+						"correct": true
+					},
+					{
+						"text": "Begin Combat",
+						"correct": false
+					},
+					{
+						"text": "Declare Blockers",
+						"correct": false
+					},
+					{
+						"text": "Cleanup",
+						"correct": false
+					}
+				],
+				"description": "The \"beginning phase\" (1st phase) of each turn has 3 steps:</br><b>1) Untap</b></br>2) Upkeep</br>3) Draw",
+				"link": "/getting-started/turn-overview/#beginning-phase"
+			},
+			{
+				"question": "What is the last step of each turn?",
+				"answers": [
+					{
+						"text": "Untap",
+						"correct": false
+					},
+					{
+						"text": "Begin Combat",
+						"correct": false
+					},
+					{
+						"text": "Declare Blockers",
+						"correct": false
+					},
+					{
+						"text": "Cleanup",
+						"correct": true
+					}
+				],
+				"description": "The \"End Phase\" has 2 steps:</br>1) End Step</br><b>2) Cleanup Step</b>",
+				"link": "/getting-started/turn-overview/#end-phase"
+			},
+			{
+				"question": "How many phases are there in a turn?",
+				"answers": [
+					{
+						"text": "4",
+						"correct": false
+					},
+					{
+						"text": "3",
+						"correct": false
+					},
+					{
+						"text": "7",
+						"correct": false
+					},
+					{
+						"text": "5",
+						"correct": true
+					}
+				],
+				"description": "<b>There are 5 phases in a turn:</b></br>1) Beginning Phase</br>2) Pre-combat Main Phase (1st Main Phase)</br>3) Combat Phase</br>4) Post-combat Main Phase (2nd Main Phase)</br>5) End Phase",
+				"link": "/getting-started/turn-overview"
+			},
+			{
+				"question": "Which phase can you cast sorceries or creatures?",
+				"answers": [
+					{
+						"text": "Untap",
+						"correct": false
+					},
+					{
+						"text": "Main",
+						"correct": true
+					},
+					{
+						"text": "Combat",
+						"correct": false
+					},
+					{
+						"text": "Upkeep",
+						"correct": false
+					}
+				],
+				"description": "Sorceries, Creatures, Enchantments, Artifacts, Planeswalkers, & Battles all are played at \"Sorcery Speed\" which means they <b>can only be played during the 2 main phases</b> on your own turn.",
+				"link": "/getting-started/card-types/#sorcery"
+			},
+			{
+				"question": "Creatures with \"First Strike\" and/or \"Double Strike\" ____.",
+				"answers": [
+					{
+						"text": "Deal extra damage based on the number of creatures you control",
+						"correct": false
+					},
+					{
+						"text": "Have the chance to critically hit the defending creature",
+						"correct": false
+					},
+					{
+						"text": "Deal damage first, before most creatures",
+						"correct": true
+					},
+					{
+						"text": "Always kill the defending creature",
+						"correct": false
+					}
+				],
+				"description": "During combat, damage is done in 2 steps:</br><b>1) \"First Strike Damage\"</b></br>2) \"Damage\" Creatures with \"Double Strike\" deal damage during both steps.",
+				"link": "/getting-started/turn-overview/#combat-phase_first-strike-damage"
+			},
+
+			{
+				"question": "In the Standard format, what is the minimum deck size?",
+				"answers": [
+					{
+						"text": "90",
+						"correct": false
+					},
+					{
+						"text": "60",
+						"correct": true
+					},
+					{
+						"text": "25",
+						"correct": false
+					},
+					{
+						"text": "40",
+						"correct": false
+					}
+				],
+				"description": "In \"Standard\", the most common format, you need to have <b>at least 60 cards</b> in your deck. Though there is no maximum deck size.",
+				"link": "https://magic.wizards.com/en/formats/standard#:~:text=Standard%20games%20are%20one%2Don%2Done%20with%20a%2060%20card%20minimum%20for%20the%20main%20deck"
+			},
+			{
+				"question": "In a Commander formatted game, how many cards are allowed in a deck (including the commander)?",
+				"answers": [
+					{
+						"text": "100",
+						"correct": true
+					},
+					{
+						"text": "60",
+						"correct": false
+					},
+					{
+						"text": "80",
+						"correct": false
+					},
+					{
+						"text": "120",
+						"correct": false
+					}
+				],
+				"description": "A deck in the \"Commander\" format can only have <b>100 cards</b>. This includes the commander card, which is set to the side in the \"Command Zone\", meaning that your library starts with only 99 cards.",
+				"link": "https://magic.wizards.com/en/formats/commander#:~:text=This%20format%20is%20for%20four%20players%20per%20game%20and%20deck%20sizes%20are%2099%20cards%20%2B%201%20commander%20card.%20The%20game%20duration%20for%20this%20format%20should%20be%20about%2020%20minutes%20per%20player."
+			},
+			{
+				"question": "What word best describes a deck that relies heavily on a variety of card types to win the game?",
+				"answers": [
+					{
+						"text": "Aggressive",
+						"correct": false
+					},
+					{
+						"text": "Midranged",
+						"correct": false
+					},
+					{
+						"text": "Combination",
+						"correct": true
+					},
+					{
+						"text": "Control",
+						"correct": false
+					}
+				],
+				"description": "There are 7 deck archetypes:</br>1) Aggressive (Aggro)</br>2) Control</br>3) Midrange</br><b>4) Combo</b></br>5) Combo-Control</br>6) Aggro-Control/Tempo</br>7) Ramp. <i>*Check the link for more info on each*</i>",
+				"link": "https://draftsim.com/mtg-archetypes/#Combo"
+			},
+			{
+				"question": "What word best describes a deck that focuses on slowly increasing resources to overwhelm their opponent for victory?",
+				"answers": [
+					{
+						"text": "Control",
+						"correct": false
+					},
+					{
+						"text": "Midranged",
+						"correct": false
+					},
+					{
+						"text": "Non-Agressive",
+						"correct": false
+					},
+					{
+						"text": "Ramp",
+						"correct": true
+					}
+				],
+				"description": "There are 7 deck archetypes:</br>1) Aggressive (Aggro)</br>2) Control</br>3) Midrange</br>4) Combo</br>5) Combo-Control</br>6) Aggro-Control/Tempo</br><b>7) Ramp</b> <i>*Check the link for more info on each*</i>",
+				"link": "https://draftsim.com/mtg-archetypes/#Ramp"
+			},
+			{
+				"question": "Many tournaments and events allow players to have extra cards and sometimes an extra deck. What is this called?",
+				"answers": [
+					{
+						"text": "Standard",
+						"correct": false
+					},
+					{
+						"text": "Sideboard",
+						"correct": true
+					},
+					{
+						"text": "Extra Cards",
+						"correct": false
+					},
+					{
+						"text": "Swap-Ins",
+						"correct": false
+					}
+				],
+				"description": "A <b>\"Sideboard\"</b> is any additional cards from outside the game that can be used to modify their deck between games during a match or tournament.",
+				"link": "https://mtg.fandom.com/wiki/Sideboard"
+			},
+
+			{
+				"question": "The term \"CMC\" stands for ____.",
+				"answers": [
+					{
+						"text": "Creating Magic Cards",
+						"correct": false
+					},
+					{
+						"text": "Converted Mana Cost",
+						"correct": true
+					},
+					{
+						"text": "Constructed Monster Combat",
+						"correct": false
+					},
+					{
+						"text": "Creature Management Cost",
+						"correct": false
+					}
+				],
+				"description": "\"CMC\" stands for <b>\"Converted Mana Cost\"</b>, which is simply the total number of mana needed to cast a spell. CMC ignores what color of mana is used and any additional, optional costs (like \"Kicker\")",
+				"link": "/getting-started/card-overview/#mana-cost"
+			},
+			{
+				"question": "Creatures have two numbers \"##/##\". Which term does the first number mean?",
+				"answers": [
+					{
+						"text": "Strength",
+						"correct": false
+					},
+					{
+						"text": "Toughness",
+						"correct": false
+					},
+					{
+						"text": "Power",
+						"correct": true
+					},
+					{
+						"text": "Resistance",
+						"correct": false
+					}
+				],
+				"description": "The 2 numbers every creature has stand for their <b>Power</b> and Toughness. This is always seen as \"<b>Power</b>/Toughness\" with the slash inbetween.",
+				"link": "/getting-started/card-overview/#power-toughness"
+			},
+			{
+				"question": "Creatures have two numbers \"##/##\". Which term does the second number mean?",
+				"answers": [
+					{
+						"text": "Strength",
+						"correct": false
+					},
+					{
+						"text": "Toughness",
+						"correct": true
+					},
+					{
+						"text": "Power",
+						"correct": false
+					},
+					{
+						"text": "Resistance",
+						"correct": false
+					}
+				],
+				"description": "The 2 numbers every creature has stand for their Power and <b>Toughness</b>. This is always seen as \"Power/<b>Toughness</b>\" with the slash inbetween.",
+				"link": "/getting-started/card-overview/#power-toughness"
+			},
+			{
+				"question": "What ability is commonly associated only with creature cards?",
+				"answers": [
+					{
+						"text": "Cycling",
+						"correct": false
+					},
+					{
+						"text": "Ward",
+						"correct": false
+					},
+					{
+						"text": "Kicker",
+						"correct": false
+					},
+					{
+						"text": "Flying",
+						"correct": true
+					}
+				],
+				"description": "While all of these are keywords and you may find all of them on a creature at some point, only <b>\"Flying\" is exclusively seen on creatures</b>. The others are often also seen on the other card types such as Artifacts and Enchantments.",
+				"link": "/getting-started/card-overview/#text"
+			},
+			{
+				"question": "Which of these is NOT a card type",
+				"answers": [
+					{
+						"text": "Planeswalker",
+						"correct": false
+					},
+					{
+						"text": "Clash",
+						"correct": true
+					},
+					{
+						"text": "Instant",
+						"correct": false
+					},
+					{
+						"text": "Sorcery",
+						"correct": false
+					}
+				],
+				"description": "<b>\"Clash\"</b> is a keyword rather than a card type. Though, it might sound similar to a less-common type, \"Battle\"",
+				"link": "/getting-started/card-overview/#card-type"
+			},
+
+			{
+				"question": "What is a common strategy to maintain a balanced mana base in a deck?",
+				"answers": [
+					{
+						"text": "Prioritize non-land cards",
+						"correct": false
+					},
+					{
+						"text": "Maximize only one type of land",
+						"correct": false
+					},
+					{
+						"text": "Ignore the mana curve",
+						"correct": false
+					},
+					{
+						"text": "Diversify land types",
+						"correct": true
+					}
+				],
+				"description": "Even if your deck has 95% of one color and only 5% of a different, you should still <b>diversify your land types</b>, giving you a better chance to have the second color when you actually need it. Most cards will only have 1 or 2 of a single color in its mana cost, the rest being grey, or colorless, mana that any color can be used for.",
+				"link": "https://draftsim.com/build-mtg-deck/#Step_Five_The_Mana_Curve"
+			},
+			{
+				"question": "What is the best way to improve at playing?",
+				"answers": [
+					{
+						"text": "Learn from more experienced players",
+						"correct": true
+					},
+					{
+						"text": "Always play with a similar deck",
+						"correct": false
+					},
+					{
+						"text": "Make up interpretations of the rules",
+						"correct": false
+					},
+					{
+						"text": "Bring snacks so your opponents like you more",
+						"correct": false
+					}
+				],
+				"description": "Obviously, simply playing more will give you more experience. But, to improve quicker, you should never be afraid to ask questions and <b>learn from more experienced players</b>. Especially in the casual setting most games (outside of tournaments) are played with, most people are happy to help.",
+				"link": "https://magic.wizards.com/en/news/feature/becoming-better-player-2015-09-28#:~:text=have%20control%20over.-,Research,-Improving%20at%20Magic"
+			},
+			{
+				"question": "What is a common mistake new players tend to make?",
+				"answers": [
+					{
+						"text": "Focusing on the cards' flavor text",
+						"correct": false
+					},
+					{
+						"text": "Feeling over-confident",
+						"correct": false
+					},
+					{
+						"text": "Overanalyzing the opponents strategy",
+						"correct": false
+					},
+					{
+						"text": "Never asking questions",
+						"correct": true
+					}
+				],
+				"description": "You should <b>always ask questions</b>, especially the \"Why\" questions. Why did you win/lose? Why did they win? What could you have done differently? How can you recognise that in the future?",
+				"link": "https://magic.wizards.com/en/news/feature/becoming-better-player-2015-09-28#:~:text=by%20Jason%20Rainville-,Asking%20Why,-The%20best%20way"
+			},
+			{
+				"question": "What concept should be heavily considered when building a deck?",
+				"answers": [
+					{
+						"text": "Flavors",
+						"correct": false
+					},
+					{
+						"text": "Synergy",
+						"correct": true
+					},
+					{
+						"text": "Rarity",
+						"correct": false
+					},
+					{
+						"text": "Artwork",
+						"correct": false
+					}
+				],
+				"description": "<b>\"Synergy\"</b> is how well cards work with each other. Are there a lot of cards in the deck that work well with each other? Do these cards work well in a variety of combinations? The website <i>edhrec.com/combos</i> lists a lot of (definitely not all) combos that can get you started.",
+				"link": "https://mtg.fandom.com/wiki/Synergy"
+			},
+			{
+				"question": "The \"Library\" refers to ____.",
+				"answers": [
+					{
+						"text": "The cards in your hand",
+						"correct": false
+					},
+					{
+						"text": "The deck of cards you draw from",
+						"correct": true
+					},
+					{
+						"text": "The place where cards are stored for later use after casting",
+						"correct": false
+					},
+					{
+						"text": "The cards you've played on the table",
+						"correct": false
+					}
+				],
+				"description": "The \"Library\" is <b>the stack of cards from your deck that haven't been played or drawn yet</b>. Though sometimes (such as with \"Mill\"), cards might leave your library without having been played or drawn. ",
+				"link": "/getting-started/board-zones/#library"
+			}
+		]
+	}
+]
