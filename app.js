@@ -31,7 +31,7 @@ app.get("/", (req,res) => {// If there's nothing after the first '.com', then th
 });
 
 // Sends traffic over to the corresponding router depending on the url (".com/<THIS PART>")
-app.use("/getting-started", starterGuideRouter);
+app.use("/starter-guide", starterGuideRouter);
 app.use("/decks", deckRouter);
 app.use("/quiz", quizRouter);
 
