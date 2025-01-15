@@ -1,3 +1,10 @@
+This is a pet project to make a website where I can sell my MTG cards. I then got into making proxies (ones that were very obviously not official), so I decided to also include selling those as well. Then to top it all off, I wanted to make MTG more accessible to new players—in part by making good/decent decks easy and affordable through proxies and pre-designed decks— so I started writing up simple instructions and "tutorials" on how to play. All of these ideas got combined into this one website.
+
+As you might notice, there is a lot of missing parts. While not completely intentional, it is the unfortunate by-product of having many, many random ideas, ADHD which will switch it's hyperfocus every week or two, and life deciding how much time I actually have to work on these many assorted ideas.
+
+In short, yes, I would love to return back to this project. Life just has this way of constantly changing things up on me, and when you combine that with consistently changing priorities, most of my pet/side projects have been put on hold for some unknown amount of time.
+
+
 This project uses Node.js to run the web server. This can be done locally using a command line terminal such as Windows' "Command Prompt".
 
 To run this locally, you will need to do a few things first:
