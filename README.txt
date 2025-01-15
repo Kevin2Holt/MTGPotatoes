@@ -1,4 +1,4 @@
-This project uses Node.js to run the web server. This can be done locally using a command line terminal such as Window's "Command Prompt".
+This project uses Node.js to run the web server. This can be done locally using a command line terminal such as Windows' "Command Prompt".
 
 To run this locally, you will need to do a few things first:
 
